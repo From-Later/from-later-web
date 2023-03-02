@@ -1,0 +1,48 @@
+import BlogLayout from '@/layouts/BlogLayout'
+import EmbeddedVideo from '@/components/EmbeddedVideo'
+import SummaryBox from '@/components/SummaryBox'
+
+# Broadcast
+
+<SummaryBox>
+PROGRAM: All of You
+
+FILE UNDER: From Later
+
+GENRE: Zaki Ibrahim
+
+CONTAINS: Z. Ibrahim, A. Johnson, W. Johnson, R. Bolton, M. Siu
+
+CIRCULATION: Research-based, speculative songs
+
+EDITOR: Compersia is a mass-polyamory scenario characterized by multi-layered complex structures of transient kinship. Communication and ethics innovations empower people to negotiate quality relationships where partners find joy in their partners’ joy.
+
+SERIES MUSIC: M. Siu, R. Bolton, U. Vira, A. Alikpala
+
+VOLUME/EDITION: 1.0 / #
+</SummaryBox>
+
+Broadcast From Later is our experiment in recording what we do when we future. Foresight begins with identifying and unpacking Weak Signals of Change — things we notice that we don’t quite understand but we suspect may influence futures in significant ways.
+
+On Broadcast From Later, we share our “Weakest Signals,” novel and weird events that appear faintly at the edges of our research radars. None of us know each other’s signals in advance, so it’s a candid view into the kinds of conversations we have when we frankly don’t know what we’re talking about. We invite you to watch the researchers and strategists of From Later, as we try to wrap our minds around emerging changes and speculate on their potential significance.
+
+Want to know our sources? Follow us [Are.na]('https://www.are.na/from-later') and [Twitter]('https://twitter.com/since21xx') — where we post Weak Signals regularly.
+
+
+## Latest broadcast
+
+<EmbeddedVideo
+  url="https://www.youtube.com/embed/mrdjSJ6rdU4?rel=0&amp;controls=1&amp;autoplay=0&amp;mute=0&amp;start=0"
+  title="Broadcast 38 | Dance like an NPC w/ Radha Mistry &amp; Tobias Revell"
+/>
+
+
+export const meta = {
+  title: `Broadcast`,
+  description: `Broadcast`,
+  intro: `Broadcast From Later is our experiment in recording what we do when we future.`,
+  quote: `Communication and ethics innovations empower people to negotiate quality relationships`,
+  date: `Nov 2013`
+}
+
+export default ({ children }) => <BlogLayout meta={meta}>{children}</BlogLayout>

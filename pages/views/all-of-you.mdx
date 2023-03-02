@@ -1,0 +1,52 @@
+import BlogLayout from '@/layouts/BlogLayout'
+import SummaryBox from '@/components/SummaryBox'
+
+# All of You
+
+All of You” is № 02 in a series of songs from later — songs written as though created in a further future environment. The speculative songs are intended to provoke critical dialogue about where we are headed. Click the headings below to learn more about the future scenario and the signals of change that informed it.
+
+<div className="audio-player w-embed">
+  <audio controls="" preload="auto" onPlay="ga('send', 'event', 'Audio', 'play', 'Lonely Arcade');">
+    <source src="https://fromlater.com/assets/mp3/all_of_you.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<SummaryBox>
+SONG: All of You
+
+ARTIST: From Later
+
+FEATURING: Zaki Ibrahim
+
+COMPOSITION: Z. Ibrahim, A. Johnson, W. Johnson, R. Bolton, M. Siu
+
+SERIES: Research-based, speculative songs
+
+SCENARIO: Compersia is a mass-polyamory scenario characterized by multi-layered complex structures of transient kinship. Communication and ethics innovations empower people to negotiate quality relationships where partners find joy in their partners’ joy.
+
+RESEARCH: M. Siu, R. Bolton, U. Vira, A. Alikpala
+
+ART: N. Rahbar
+
+ISRC: QM-EU3-19-02043
+</SummaryBox>
+
+## [ Scenario ]
+
+“All of You” is a love song written from the perspective of a lover in the near-future scenario, [Compersia]("/compersia"), where polyamorous relationships are as common and accepted as monogamous ones.
+
+It tells the story of lovers looking to transition from an open relationship to something more structured – a four-person polycule, one that they will design specially to satisfy their collective needs.
+
+In Compersia, new communication and ethics innovations empower people to design quality relationships based on the principle of compersion, where partners find joy in their partners’ joy (intimately loving another person).
+
+export const meta = {
+  title: `All of You`,
+  description: `All of You`,
+  quote: `"Close your eyes and breathe in. Take an enormous leap of faith."`,
+  intro: `“All of You” is № 02 in a series of songs from later — songs written as though created in a further future environment.`,
+  date: `Aug 2015`,
+  color: `red`
+}
+
+export default ({ children }) => <BlogLayout meta={meta}>{children}</BlogLayout>
