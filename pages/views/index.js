@@ -32,7 +32,7 @@ export default function Views({ posts }) {
             {
               POST_TAGS.map(tag => {
                 return(
-                  <a href="#" className="button w-button">{tag}</a>
+                  <a href="#" className="button w-button" key={tag}>{tag}</a>
                 )
               })
             }
