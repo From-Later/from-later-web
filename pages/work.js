@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '@/styles/home.module.css'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import { getProjects } from '@/utils/projects'
@@ -11,7 +10,6 @@ export async function getStaticProps() {
     props: { projects },
   }
 }
-
 
 export default function Work({ projects }) {
 
