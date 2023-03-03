@@ -13,7 +13,7 @@ export default function DustEntries() {
     if (!entries) {
       getEntries()
     }
-  }, [])
+  })
 
   if (!entries) return null
 

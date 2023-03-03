@@ -25,7 +25,7 @@ export default function Views({ posts }) {
     } else {
       setFilteredPosts(posts)
     }
-  }, [selectedTag])
+  }, [selectedTag, posts])
 
   const handleSelectTag = (tag) => () => {
     if (selectedTag === tag) {

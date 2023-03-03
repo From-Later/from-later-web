@@ -1,4 +1,4 @@
-import BasicLayout from '@/components/BasicLayout'
+import BasicLayout from '@/layouts/BasicLayout'
 
 const Sidebar = ({ children }) => {
 
