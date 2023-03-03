@@ -14,3 +14,5 @@ export const POST_TAGS = [
   "Case Studies",
   "Projects"
 ]
+
+export const WORK_PROJECTS_ID = "https://api.are.na/v2/channels/work-vdqwxnq9j3m"

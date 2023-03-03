@@ -3,8 +3,18 @@ import Image from 'next/image'
 import styles from '@/styles/home.module.css'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
+import { getProjects } from '@/utils/projects'
 
-export default function Work() {
+export async function getStaticProps() {
+  const projects = await getProjects()
+  return {
+    props: { projects },
+  }
+}
+
+
+export default function Work({ projects }) {
+
   return (
     <>
       <Head>
@@ -26,120 +36,13 @@ export default function Work() {
             <h3 className="heading-3"><strong>Timeline of projects →</strong></h3>
             <div className="scroll-wrap">
               <div className="scroll-container w-clearfix">
-                <a href="#" className="timeline-item w-inline-block">
-                  <div className="post-date">July 2021</div>
-                  <div><strong>Desire Paths</strong></div>
-                  <p className="timeline-subtitle">Podcast series, Luminato Festival</p>
-                  <div className="timeline-hover-arrow">→</div>
-                </a>
-                <a href="#" className="timeline-item w-inline-block">
-                  <div className="post-date">July 2021</div>
-                  <div><strong>Futures of Democratized 3D Tools and Platforms</strong></div>
-                  <p className="timeline-subtitle">Research and futures perspectives<br/>Montréal, QC, Canada</p>
-                  <div className="timeline-hover-arrow">→</div>
-                </a>
-                <a href="#" className="timeline-item w-inline-block">
-                  <div className="post-date">June 2021</div>
-                  <div><strong>Directions to Nowhere in Particular</strong></div>
-                  <p className="timeline-subtitle">Prompts for sensing, making, and navigating public space</p>
-                  <div className="timeline-hover-arrow">→</div>
-                </a>
-                <a href="#" className="timeline-item w-inline-block">
-                  <div className="post-date">May 2021</div>
-                  <div><strong>This Woman’s Work</strong></div>
-                  <p className="timeline-subtitle">Exhibit, ATM x Myseum Intersections</p>
-                  <div className="timeline-hover-arrow">→</div>
-                </a>
-                <a href="#" className="timeline-item w-inline-block">
-                  <div className="post-date">April 2021</div>
-                  <div><strong>Work/Place Futures</strong></div>
-                  <p className="timeline-subtitle">Report and Podcast Series, Lane</p>
-                  <div className="timeline-hover-arrow">→</div>
-                </a>
-                <a href="#" className="timeline-item w-inline-block">
-                  <div className="post-date">April 2021</div>
-                  <div><strong>Restore the Core</strong></div>
-                  <p className="timeline-subtitle">Scenarios, Canadian Urban Institute</p>
-                  <div className="timeline-hover-arrow">→</div>
-                </a>
-                <a href="#" className="timeline-item w-inline-block">
-                  <div className="post-date">March, 2021</div>
-                  <div><strong>Recomposia</strong></div>
-                  <p className="timeline-subtitle">Soundscape and panel discussion<br/>Adidas x Slow Factory Foundation</p>
-                  <div className="timeline-hover-arrow">→</div>
-                </a>
-                <a href="#" className="timeline-item w-inline-block">
-                  <div className="post-date">February 2021</div>
-                  <div><strong>Digital and/as Public Space</strong></div>
-                  <p className="timeline-subtitle">Digital Facilitator, The Bentway</p>
-                  <div className="timeline-hover-arrow">→</div>
-                </a>
-                <a href="#" className="timeline-item w-inline-block">
-                  <div className="post-date">February 2021</div>
-                  <div><strong>Toolkit for Generous Listening</strong></div>
-                  <p className="timeline-subtitle">The Vuslat Foundation</p>
-                  <div className="timeline-hover-arrow">→</div>
-                </a>
-                <a href="#" className="timeline-item w-inline-block">
-                  <div className="post-date">January 2021</div>
-                  <div><strong>Envisioning the Next Decade</strong></div>
-                  <p className="timeline-subtitle">Narrative Strategy, Autodesk Foundation<br/>San Francisco CA, USA</p>
-                  <div className="timeline-hover-arrow">→</div>
-                </a>
-                <a href="#" className="timeline-item w-inline-block">
-                  <div className="post-date">December 2020</div>
-                  <div><strong>Strategic Blueprint 2025</strong></div>
-                  <p className="timeline-subtitle">Campari x Angry Butterfly<br/>Toronto, ON, Canada</p>
-                  <div className="timeline-hover-arrow">→</div>
-                </a>
-                <a href="#" className="timeline-item w-inline-block">
-                  <div className="post-date">November 2020</div>
-                  <div><strong>Speculative Brands in Biology</strong></div>
-                  <p className="timeline-subtitle">SynBioBeta Conference</p>
-                  <div className="timeline-hover-arrow">→</div>
-                </a>
-                <a href="#" className="timeline-item w-inline-block">
-                  <div className="post-date">September 2020</div>
-                  <div><strong>Memory Work</strong></div>
-                  <p className="timeline-subtitle">Immersive Soundscape Scenario</p>
-                  <div className="timeline-hover-arrow">→</div>
-                </a>
-                <a href="#" className="timeline-item w-inline-block">
-                  <div className="post-date">August 2020</div>
-                  <div><strong>Futures of Home and Mobility</strong></div>
-                  <p className="timeline-subtitle">Four Scenarios, RBC Ventures<br/>Toronto ON, Canada</p>
-                  <div className="timeline-hover-arrow">→</div>
-                </a>
-                <a href="#" className="timeline-item w-inline-block">
-                  <div className="post-date">July 2020</div>
-                  <div><strong>Strategies Towards Digital Transformation</strong></div>
-                  <p className="timeline-subtitle">Digital Maturity Report, Vtape<br/>Toronto ON, Canada</p>
-                  <div className="timeline-hover-arrow">→</div>
-                </a>
-                <a href="#" className="timeline-item w-inline-block">
-                  <div className="post-date">June 2020</div>
-                  <div><strong>Futures of Connection and Transformation</strong></div>
-                  <p className="timeline-subtitle">Foresight scan, Lululemon Athletica<br/>Vancouver BC, Canada</p>
-                  <div className="timeline-hover-arrow">→</div>
-                </a>
-                <a href="#" className="timeline-item w-inline-block">
-                  <div className="post-date">May 2020</div>
-                  <div><strong>Fertilizer</strong></div>
-                  <p className="timeline-subtitle">Lexicon on Plant and Machine Intelligence<br/>[ Views ] from later</p>
-                  <div className="timeline-hover-arrow">→</div>
-                </a>
-                <a href="#" className="timeline-item w-inline-block">
-                  <div className="post-date">April 2020 - Ongoing</div>
-                  <div><strong>All Relevant Change</strong></div>
-                  <p className="timeline-subtitle">Building futures amidst COVID-19</p>
-                  <div className="timeline-hover-arrow">→</div>
-                </a>
-                <a href="#" className="timeline-item w-inline-block">
-                  <div className="post-date">March 2020 - Ongoing</div>
-                  <div><strong>Building Futures in Times of Crisis</strong></div>
-                  <p className="timeline-subtitle">Remote Lectures and Workshops<br/>MaRS; Conference Board of Canada</p>
-                  <div className="timeline-hover-arrow">→</div>
-                </a>
+                {projects.map(project => {
+                  return (
+                    <div className="timeline-item w-inline-block" key={project.id}>
+                      <div dangerouslySetInnerHTML={{__html: project.content_html }} />
+                    </div>
+                  )
+                })}
               </div>
             </div>
           </div>

@@ -142,3 +142,25 @@ a {
 .slider {
   overflow-x: hidden;
 }
+
+.scroll-wrap {overflow-y: hidden;}
+/* width */
+.scroll-wrap::-webkit-scrollbar {
+  height: 5px;
+}
+/* Track */
+.scroll-wrap::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0);
+}
+/* Handle */
+.scroll-wrap::-webkit-scrollbar-thumb {
+  background: #ff9d29;
+  border-radius: 10px;
+}
+/* Handle on hover */
+.scroll-wrap::-webkit-scrollbar-thumb:hover {
+  background: #ff9d29;
+}
+.scroll-wrap::-webkit-scrollbar-corner {
+  background: rgba(0,0,0,0);
+}

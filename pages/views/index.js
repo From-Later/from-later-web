@@ -15,7 +15,6 @@ export async function getStaticProps() {
 }
 
 export default function Views({ posts }) {
-  console.log({posts})
   return (
     <>
       <Head>
@@ -45,7 +44,7 @@ export default function Views({ posts }) {
                   <Link href={post.link} className="post w-inline-block" key={post.id}>
                     <div className={post.meta.color ? `post-image-holder ${post.meta.color}` : "post-image-holder"}>
                       { post.meta.img ? (
-                        <img src={post.meta.img} loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, 92vw" srcSet="images/img-p-500.jpeg 500w, images/img-p-800.jpeg 800w, images/img-p-1080.jpeg 1080w, images/img.jpeg 1500w" alt="" className="post-image"/>
+                        <img src={post.meta.img} loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, 92vw"  alt="" className="post-image"/>
                         ) : (
                         <div className="post-article-quote">{post.meta.quote}</div>
                         )
@@ -62,7 +61,7 @@ export default function Views({ posts }) {
               })
             }
 
-            <a id="w-node-c396cf57-cdf9-eae8-3e84-4ff1ee799efe-159348e9" href="dust.html" className="post w-inline-block">
+            <Link href="/dust" className="post w-inline-block">
               <div className="post-image-holder">
                 <div className="post-article-quote">A <em>microscenario</em> is a rapidly written, highly compressed expression</div>
               </div>
@@ -72,7 +71,7 @@ export default function Views({ posts }) {
               <div className="button-post">
                 <div className="button">Read <span className="post-button-arrow-span">→</span></div>
               </div>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

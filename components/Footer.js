@@ -13,7 +13,7 @@ export default function Footer(){
                 <div className="drop-intro">
                   <div className="form-block w-form">
                     <form id="email-form" name="email-form" data-name="Email Form" action="https://fromlater.us17.list-manage.com/subscribe/post?u=b1b32d764bc713886074f83b3&amp;amp;id=2895e0feb8&amp;amp;f_id=00694ee0f0" method="post" className="form w-clearfix">
-                      <input type="email" className="text-feild w-input" maxlength="256" name="email-3" data-name="Email 3" placeholder="your email address" id="email-3" required=""/>
+                      <input type="email" className="text-feild w-input" maxLength="256" name="email-3" data-name="Email 3" placeholder="your email address" id="email-3" required=""/>
                       <input type="submit" value="Subscribe" data-wait="Please wait..." className="button w-button"/>
                     </form>
                     <div className="success-message w-form-done">

@@ -20,7 +20,7 @@ const inter = Inter({
 })
 
 const libre_baskerville = Libre_Baskerville({
-  weight: ['700'],
+  weight: ['400','700'],
   style: ['normal', 'italic'],
   subsets: ['latin', 'latin-ext'],
 })
@@ -52,7 +52,7 @@ const dm_serif_display = DM_Serif_Display({
 
 export default function App({ Component, pageProps }) {
   return (
-    <main className={`${inter.className} ${dm_mono.className} ${dm_serif_display.className} ${dm_serif_text.className} ${dm_sans.className}  ${libre_baskerville.className}`}>
+    <main className={`${inter.className} ${libre_baskerville.className}`}>
       <Component {...pageProps} />
       <Script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=62fbddbe5b25d95c13c6872f" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous" />
       <Script src="/js/webflow.js" />
