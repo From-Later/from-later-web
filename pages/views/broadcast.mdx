@@ -1,10 +1,9 @@
 import BlogLayout from '@/layouts/BlogLayout'
 import EmbeddedVideo from '@/components/EmbeddedVideo'
-import SummaryBox from '@/components/SummaryBox'
 
 # Broadcast
 
-<SummaryBox>
+<div className="label">
 PROGRAM: All of You
 
 FILE UNDER: From Later
@@ -20,7 +19,7 @@ EDITOR: Compersia is a mass-polyamory scenario characterized by multi-layered co
 SERIES MUSIC: M. Siu, R. Bolton, U. Vira, A. Alikpala
 
 VOLUME/EDITION: 1.0 / #
-</SummaryBox>
+</div>
 
 Broadcast From Later is our experiment in recording what we do when we future. Foresight begins with identifying and unpacking Weak Signals of Change — things we notice that we don’t quite understand but we suspect may influence futures in significant ways.
 
@@ -42,7 +41,8 @@ export const meta = {
   description: `Broadcast`,
   intro: `Broadcast From Later is our experiment in recording what we do when we future.`,
   quote: `Communication and ethics innovations empower people to negotiate quality relationships`,
-  date: `Nov 2013`
+  date: `Nov 2013`,
+  tags: ['Broadcast']
 }
 
 export default ({ children }) => <BlogLayout meta={meta}>{children}</BlogLayout>

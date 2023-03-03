@@ -1,12 +1,12 @@
 import BlogLayout from '@/layouts/BlogLayout'
-import SummaryBox from '@/components/SummaryBox'
 
 # Compersia
 
 Compersia is a speculative future scenario. Based on signals of change observed in the world today, it is designed to provoke critical dialogue and inspire new thinking. Click the headings below to learn more about Compersia and the signals of change that informed it.
 
 
-<SummaryBox>
+<div className="label">
+
 SCENARIO: Compersia is a mass-polyamory scenario characterized by multi-layered complex structures of transient kinship. Communication and ethics innovations empower people to negotiate quality relationships where partners find joy in their partners’ joy.
 
 FILE UNDER: Research-based, near-term, speculative futures; design fiction
@@ -14,7 +14,8 @@ FILE UNDER: Research-based, near-term, speculative futures; design fiction
 PROJECT LEAD: [ Macy Siu ] *from later*
 
 RESEARCH: M. Siu, R. Bolton, U. Vira, A. Alikpala
-</SummaryBox>
+
+</div>
 
 ## [ Scenario ]
 
@@ -171,7 +172,8 @@ export const meta = {
   description: `Compersia`,
   img: `/images/compersia_naz_r_large.jpeg`,
   intro: `Compersia is a speculative future scenario. Based on signals of change observed in the world today, it is designed to provoke critical dialogue and inspire new thinking.`,
-  date: `Aug 2015`
+  date: `Aug 2015`,
+  tags: ['Scenarios']
 }
 
 export default ({ children }) => <BlogLayout meta={meta}>{children}</BlogLayout>

@@ -320,6 +320,10 @@ blockquote {
   opacity: 1;
 }
 
+.button.selected {
+  background-color: #ff9d29;
+}
+
 .button.submit {
   width: 25%;
   float: left;
@@ -514,7 +518,7 @@ blockquote {
   text-align: justify;
 }
 
-.post-date {
+.post-date, .timeline-item code {
   margin-bottom: 10px;
   font-family: Inter, sans-serif;
   font-size: 0.6em;
@@ -737,6 +741,18 @@ blockquote {
   text-align: left;
 }
 
+.timeline-item * {
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  opacity: 1;
+}
+
+.timeline-item a {
+  word-break: break-word;
+
+}
+
 .timeline-subtitle {
   font-size: 14px;
   line-height: 1.3em;
@@ -829,9 +845,13 @@ blockquote {
 }
 
 .dust-post {
-  margin-top: 20px;
-  margin-bottom: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   border-top: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.dust-post p {
+  margin-bottom: 10px;
 }
 
 .strike {

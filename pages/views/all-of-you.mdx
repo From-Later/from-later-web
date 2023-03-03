@@ -1,14 +1,13 @@
 import BlogLayout from '@/layouts/BlogLayout'
-import SummaryBox from '@/components/SummaryBox'
 import AudioPlayer from '@/components/AudioPlayer'
 
 # All of You
 
-All of You” is № 02 in a series of songs from later — songs written as though created in a further future environment. The speculative songs are intended to provoke critical dialogue about where we are headed. Click the headings below to learn more about the future scenario and the signals of change that informed it.
+"All of You" is № 02 in a series of songs from later — songs written as though created in a further future environment. The speculative songs are intended to provoke critical dialogue about where we are headed. Click the headings below to learn more about the future scenario and the signals of change that informed it.
 
 <AudioPlayer src="https://fromlater.com/assets/mp3/all_of_you.mp3" title="Lonely Arcade" />
 
-<SummaryBox>
+<div className="label">
 SONG: All of You
 
 ARTIST: From Later
@@ -26,7 +25,7 @@ RESEARCH: M. Siu, R. Bolton, U. Vira, A. Alikpala
 ART: N. Rahbar
 
 ISRC: QM-EU3-19-02043
-</SummaryBox>
+</div>
 
 ## [ Scenario ]
 
@@ -137,7 +136,7 @@ Compersia
 
 ## [ Performances ]
         
-“All of You” was premiered at TEDxToronto on October 26, 2018.
+"All of You" was premiered at TEDxToronto on October 26, 2018.
 
 export const meta = {
   title: `All of You`,
@@ -146,7 +145,8 @@ export const meta = {
   intro: `“All of You” is № 02 in a series of songs from later — songs written as though created in a further future environment.`,
   date: `Aug 2015`,
   color: `red`,
-  sidebar: `true`
+  sidebar: `true`,
+  tags: ['Scenarios', 'Recordings']
 }
 
 export default ({ children }) => <BlogLayout meta={meta}>{children}</BlogLayout>

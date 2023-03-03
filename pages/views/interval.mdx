@@ -1,10 +1,9 @@
 import BlogLayout from '@/layouts/BlogLayout'
 import EmbeddedVideo from '@/components/EmbeddedVideo'
-import SummaryBox from '@/components/SummaryBox'
 
 # Interval
 
-<SummaryBox>
+<div className="label">
 PROTOTYPE: Interval
 
 PURPOSE: to study the effectiveness of short periods of meditative rest to restore cognitive abilities in extreme work environments
@@ -20,7 +19,7 @@ DESIGN TEAM: U. Vira, A. Alikpala, M.Nabavi, R. Bolton
 OFFICE OF: Commercial Spaceflight (OOF-003)
 
 CATEGORY: Spacewares
-</SummaryBox>
+</div>
 
 ![''](/images/img.jpeg)
 
@@ -38,7 +37,8 @@ export const meta = {
   description: `Interval`,
   img: `/images/img.jpeg`,
   intro: `In the midst of a seven hour lunar surface mission to collect distant crater samples, the astronaut is cognitively and physically exhausted.`,
-  date: `Dec 2019`
+  date: `Dec 2019`,
+  tags: ['Projects']
 }
 
 export default ({ children }) => <BlogLayout meta={meta}>{children}</BlogLayout>

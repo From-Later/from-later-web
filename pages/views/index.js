@@ -1,10 +1,11 @@
-import Head from 'next/head'
+import BasicLayout from '@/layouts/BasicLayout'
 import Image from 'next/image'
 import Link from 'next/link'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import { getPosts } from 'utils/posts';
 import { POST_TAGS } from 'utils/constants';
+import { useState, useEffect } from 'react'
 
 export async function getStaticProps() {
   const posts = await getPosts()
@@ -13,15 +14,33 @@ export async function getStaticProps() {
   }
 }
 
+const meta = {
+  title: "Views"
+}
+
 export default function Views({ posts }) {
+  const [filteredPosts, setFilteredPosts] = useState(posts)
+  const [selectedTag, setSelectedTag] = useState()
+
+  useEffect(() => {
+    if (selectedTag) {
+      const filteredPostsByTag = posts.filter(p => p.meta.tags.includes(selectedTag))
+      setFilteredPosts(filteredPostsByTag)
+    } else {
+      setFilteredPosts(posts)
+    }
+  }, [selectedTag])
+
+  const handleSelectTag = (tag) => () => {
+    if (selectedTag === tag) {
+      setSelectedTag(null)
+    } else {
+      setSelectedTag(tag)
+    }
+  }
+
   return (
-    <>
-      <Head>
-        <title>Views</title>
-        <meta content="Views" property="og:title"/>
-        <meta content="Views" property="twitter:title"/>
-      </Head>
-      <Navigation />
+    <BasicLayout meta={meta}>
       <div className="views-header wf-section">
         <h1>Views <em className="italic-text">From Later</em></h1>
       </div>
@@ -31,14 +50,20 @@ export default function Views({ posts }) {
             {
               POST_TAGS.map(tag => {
                 return(
-                  <a href="#" className="button w-button" key={tag}>{tag}</a>
+                  <button 
+                    onClick={handleSelectTag(tag)} 
+                    className={`button w-button ${tag === selectedTag ? "selected" : ""}`} 
+                    key={tag}
+                  >
+                    {tag}
+                  </button>
                 )
               })
             }
           </div>
           <div className="w-layout-grid grid">
             {
-              posts.map(post => {
+              filteredPosts.map(post => {
                 return (
                   <Link href={post.link} className="post w-inline-block" key={post.id}>
                     <div className={post.meta.color ? `post-image-holder ${post.meta.color}` : "post-image-holder"}>
@@ -59,22 +84,9 @@ export default function Views({ posts }) {
                 )
               })
             }
-
-            <Link href="/dust" className="post w-inline-block">
-              <div className="post-image-holder">
-                <div className="post-article-quote">A <em>microscenario</em> is a rapidly written, highly compressed expression</div>
-              </div>
-              <div className="post-date">NOV 2013</div>
-              <div className="post-title">DUST</div>
-              <p className="post-intro">The following <em>microscenarios</em> are inspired by weak signals, literary microfictions, constrained writing techniques, and continuous creative outputs.</p>
-              <div className="button-post">
-                <div className="button">Read <span className="post-button-arrow-span">→</span></div>
-              </div>
-            </Link>
           </div>
         </div>
       </div>
-      <Footer />
-    </>
+    </BasicLayout>
   )
 }

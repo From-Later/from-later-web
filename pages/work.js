@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import BasicLayout from '@/layouts/BasicLayout'
 import Image from 'next/image'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
@@ -11,17 +11,14 @@ export async function getStaticProps() {
   }
 }
 
+const meta = {
+  title: "About"
+}
+
 export default function Work({ projects }) {
 
   return (
-    <>
-      <Head>
-        <title>About</title>
-        <meta content="About" property="og:title"/>
-        <meta content="About" property="twitter:title"/>
-      </Head>
-      <Navigation />
-
+    <BasicLayout meta={meta}>
       <div className="header wf-section">
         <div className="home-intro">
           <h1>Organizations partner with<em className="italic-text"> From Later</em> when they’re looking to understand how their role in the world is changing.</h1>
@@ -155,7 +152,6 @@ export default function Work({ projects }) {
           </div>
         </div>
       </div>
-      <Footer />
-    </>
+    </BasicLayout>
   )
 }

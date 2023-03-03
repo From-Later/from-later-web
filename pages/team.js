@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import BasicLayout from '@/layouts/BasicLayout'
 import Image from 'next/image'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
@@ -11,16 +11,13 @@ export async function getStaticProps() {
   }
 }
 
+const meta = {
+  title: "Team"
+}
+
 export default function Team({ teammates }) {
   return (
-    <>
-      <Head>
-        <title>Team</title>
-        <meta content="Team" property="og:title"/>
-        <meta content="Team" property="twitter:title"/>
-      </Head>
-      <Navigation />
-
+    <BasicLayout meta={meta}>
       <div className="header wf-section">
         <div className="home-intro">
           <h1><em className="italic-text">From Later</em> is comprised of experienced futures researchers with backgrounds ranging from arts and engineering to law and economics.</h1>
@@ -50,7 +47,6 @@ export default function Team({ teammates }) {
           </div>
         </div>
       </div>
-      <Footer />
-    </>
+    </BasicLayout>
   )
 }

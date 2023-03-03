@@ -1,16 +1,13 @@
-import Head from 'next/head'
-import Image from 'next/image'
+import BasicLayout from '@/layouts/BasicLayout'
 import Link from 'next/link'
-import Navigation from '@/components/Navigation'
-import Footer from '@/components/Footer'
+
+const meta = {
+  title: "FromLater"
+}
 
 export default function Home() {
   return (
-    <>
-      <Head>
-        <title>FromLater</title>
-      </Head>
-      <Navigation />
+    <BasicLayout meta={meta}>
       <div className="header wf-section">
         <div className="home-intro">
           <h1><em className="italic-text">From Later</em><em> </em>is a foresight studio. We monitor and make sense of change, developing clear-sighted and judicious futures perspectives<strong>.</strong></h1>
@@ -20,7 +17,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <Footer />
-    </>
+    </BasicLayout>
   )
 }
