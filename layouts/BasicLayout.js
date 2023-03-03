@@ -10,6 +10,7 @@ export default function BasicLayout({ meta, children }) {
         <title>{meta.title}</title>
         <meta content={meta.title} property="og:title"/>
         <meta content={meta.title} property="twitter:title"/>
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navigation />
       { children}
