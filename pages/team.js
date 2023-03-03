@@ -1,7 +1,4 @@
 import BasicLayout from '@/layouts/BasicLayout'
-import Image from 'next/image'
-import Navigation from '@/components/Navigation'
-import Footer from '@/components/Footer'
 import { getTeammates } from '@/utils/team'
 
 export async function getStaticProps() {

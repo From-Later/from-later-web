@@ -1,7 +1,4 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import Navigation from '@/components/Navigation'
-import Footer from '@/components/Footer'
+import BasicLayout from '@/components/BasicLayout'
 
 const Sidebar = ({ children }) => {
 
@@ -36,12 +33,7 @@ const Sidebar = ({ children }) => {
 
 export default function BlogLayout({ meta, children }) {
   return (
-    <>
-      <Head>
-        <title>{meta.title}</title>
-      </Head>
-      <Navigation />
-
+    <BasicLayout meta={meta}>
       <div className="copy w-clearfix">
         <div className="side-bar">
           { meta.sidebar === 'true' &&
@@ -58,8 +50,6 @@ export default function BlogLayout({ meta, children }) {
           </div>
         </div>
       </div>
-
-      <Footer />
-    </>
+    </BasicLayout>
   )
 }

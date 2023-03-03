@@ -1,7 +1,4 @@
 import BasicLayout from '@/layouts/BasicLayout'
-import Image from 'next/image'
-import Navigation from '@/components/Navigation'
-import Footer from '@/components/Footer'
 import { getProjects } from '@/utils/projects'
 
 export async function getStaticProps() {

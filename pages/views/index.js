@@ -1,8 +1,4 @@
 import BasicLayout from '@/layouts/BasicLayout'
-import Image from 'next/image'
-import Link from 'next/link'
-import Navigation from '@/components/Navigation'
-import Footer from '@/components/Footer'
 import { getPosts } from 'utils/posts';
 import { POST_TAGS } from 'utils/constants';
 import { useState, useEffect } from 'react'
@@ -65,7 +61,7 @@ export default function Views({ posts }) {
             {
               filteredPosts.map(post => {
                 return (
-                  <Link href={post.link} className="post w-inline-block" key={post.id}>
+                  <a href={post.link} className="post w-inline-block" key={post.id}>
                     <div className={post.meta.color ? `post-image-holder ${post.meta.color}` : "post-image-holder"}>
                       { post.meta.img ? (
                         <img src={post.meta.img} loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, 92vw"  alt="" className="post-image"/>
@@ -80,7 +76,7 @@ export default function Views({ posts }) {
                     <div className="button-post">
                       <div className="button">Read <span className="post-button-arrow-span">→</span></div>
                     </div>
-                  </Link>
+                  </a>
                 )
               })
             }

@@ -1,5 +1,3 @@
-import Link from 'next/link'
-
 export default function EmbeddedVideo({ url, title, iframeProps, iframeStyles }){
 
   const style = {

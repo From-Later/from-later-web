@@ -1,21 +1,19 @@
-import Link from 'next/link'
-
 export default function Navigation(){
   return (
     <div className="navigation w-clearfix wf-section">
-      <Link href="/" aria-current="page" className="nav-logo w-inline-block w--current">
+      <a href="/" aria-current="page" className="nav-logo w-inline-block w--current">
         <img src="/images/fllogo-01.svg" loading="lazy" data-w-id="49c910d7-11d3-14d6-6350-5f53a727c92c" alt="" className="nav-logo-img" />
-      </Link>
+      </a>
       <div className="menu-links">
-        <Link href="/views" className="navigation-link w-inline-block">
+        <a href="/views" className="navigation-link w-inline-block">
           <div>Views</div>
-        </Link>
-        <Link href="/work" className="navigation-link w-inline-block">
+        </a>
+        <a href="/work" className="navigation-link w-inline-block">
           <div>Work</div>
-        </Link>
-        <Link href="/team" className="navigation-link w-inline-block">
+        </a>
+        <a href="/team" className="navigation-link w-inline-block">
           <div>Team</div>
-        </Link>
+        </a>
       </div>
       <a data-w-id="49c910d7-11d3-14d6-6350-5f53a727c937" href="#" className="contact-button w-inline-block">
         <img src="/images/write.png" loading="lazy" alt="" className="nav-logo-img"/>
