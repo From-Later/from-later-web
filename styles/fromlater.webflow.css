@@ -61,7 +61,6 @@ h3 {
 }
 
 p {
-  margin-bottom: 0px;
   opacity: 0.75;
 }
 
@@ -588,6 +587,9 @@ blockquote {
   float: left;
   font-family: 'Libre Baskerville', sans-serif;
   font-style: italic;
+  will-change: transform;
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
 }
 
 .menu-links {
@@ -889,6 +891,83 @@ blockquote {
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
+}
+
+
+.navigation::-webkit-scrollbar {
+  background:transparent;
+  width:5px;
+}
+
+.navigation::-webkit-scrollbar-thumb { 
+  background: #000;
+}
+
+.content {
+  overflow-x: hidden;
+}
+
+.content::-webkit-scrollbar {
+  background:transparent;
+  width:5px;
+}
+
+.content::-webkit-scrollbar-thumb { 
+  background: #000;
+}
+
+::-moz-selection { /* Code for Firefox */ 
+  background: #dca800;
+  color:#000000;
+}
+
+::selection {
+  background: #dca800;
+  color:#000000;
+}
+
+.slider {
+  overflow-x: hidden;
+}
+
+.scroll-wrap {overflow-y: hidden;}
+/* width */
+.scroll-wrap::-webkit-scrollbar {
+  height: 5px;
+}
+/* Track */
+.scroll-wrap::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0);
+}
+/* Handle */
+.scroll-wrap::-webkit-scrollbar-thumb {
+  background: #ff9d29;
+  border-radius: 10px;
+}
+/* Handle on hover */
+.scroll-wrap::-webkit-scrollbar-thumb:hover {
+  background: #ff9d29;
+}
+.scroll-wrap::-webkit-scrollbar-corner {
+  background: rgba(0,0,0,0);
+}
+
+.fl-blog-post img, .fl-blog-post figure {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.fl-blog-post figure img {
+  margin-bottom: 0;
+}
+
+.fl-blog-post figcaption {
+  padding-top: 15px;
+  opacity: 0.75;
+  font-size: 0.75em;
+  line-height: 1.3em;
+  text-align: center;
+  font-style: italic;
 }
 
 @media screen and (max-width: 991px) {

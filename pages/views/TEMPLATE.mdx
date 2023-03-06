@@ -1,0 +1,25 @@
+import BlogLayout from '@/layouts/BlogLayout'
+import AudioPlayer from '@/components/AudioPlayer'
+import EmbeddedVideo from '@/components/EmbeddedVideo'
+
+# Title
+
+<div className="label">
+
+</div>
+
+## Subtitle
+
+
+export const meta = {
+  title: ``,
+  description: ``,
+  quote: ``,
+  intro: ``,
+  date: ``,
+  color: ``,
+  sidebar: true,
+  tags: []
+}
+
+export default ({ children }) => <BlogLayout meta={meta}>{children}</BlogLayout>

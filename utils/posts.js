@@ -5,7 +5,7 @@ const postsDirectory = path.join(process.cwd(), 'pages', 'views');
 
 export async function getPosts() {
   const allFiles = fs.readdirSync(postsDirectory)
-  const fileNames = allFiles.filter(f => f !== "index.js")
+  const fileNames = allFiles.filter(f => f !== "index.js" && f !== "TEMPLATE.mdx")
 
   const posts = await Promise.all(
     fileNames.map(async (fileName) => {

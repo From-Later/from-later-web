@@ -11,11 +11,15 @@
   "dependencies": {
     "@mdx-js/loader": "^2.3.0",
     "@mdx-js/react": "^2.3.0",
+    "@microflash/remark-figure-caption": "^1.0.0",
     "@next/mdx": "^13.2.1",
     "eslint": "8.35.0",
     "eslint-config-next": "13.2.1",
     "next": "13.2.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "rehype-slug": "^5.1.0",
+    "remark-gfm": "^3.0.1",
+    "remark-toc": "^8.0.1"
   }
 }

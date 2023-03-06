@@ -1,5 +1,6 @@
 import BlogLayout from '@/layouts/BlogLayout'
 import EmbeddedVideo from '@/components/EmbeddedVideo'
+import AudioPlayer from '@/components/AudioPlayer'
 
 # Interval
 
@@ -21,7 +22,7 @@ OFFICE OF: Commercial Spaceflight (OOF-003)
 CATEGORY: Spacewares
 </div>
 
-![''](/images/img.jpeg)
+![](/images/img.jpeg)
 
 In the midst of a seven hour lunar surface mission to collect distant crater samples, the astronaut is cognitively and physically exhausted. Mission control notifies her to standby as they go offline to troubleshoot comms. She has a twenty minute window. Tapping the EVA helmet activates Interval. The visor dims, a soothing soundscape fills the helmet, and a voice guides her through a meditation practice. A subtle glow pulses in step with their heart rate, growing slower as she relaxes…
 
@@ -29,7 +30,104 @@ In 2018, From Later collaborated with Maryam Nabavi of Levitate Design on protot
 
 Click on the headings below to learn more about the project.
 
+## [ Spacewares: personal products for comfort and wellbeing during space travel ]
 
+In a near future where commercial space travel is cheaper and more accessible, suppose the emergence of a new category — Spacewares — personal products that make outer space more comfortable and habitable. From Later imagined a Spaceflight Lifestyle Brand that would design safe, compact, ergonomic, &amp; elegant personal products for space travellers (and enthusiastic terrestrials).
+
+With Nabavi, we explored how a design-driven, function-first, aesthetically beautiful line of products could make the experience of space travel comfortable, enjoyable, and stylish for potential tourists. Spacewares would need to be: 1) durable enough to tolerate extreme conditions of radiation, pressure, temperature, and mechanical stress 2) compact and lightweight with minimal packaging footprint 3) ergonomically engineered to maximize efficiency, comfort, and enjoyment 4) safe, easy to clean, non-toxic, and resistant to microbial contamination.
+
+We considered several product spaces including: personal hygiene kits (containing rinseless soap; reusable 50ml water packets; ingestible toothpaste; skincare products for protection against radiation and trans-epidermal water loss); journaling stationery (gas-charged ballpoint pen &amp; notebook); a titanium timekeeping device to keep track of earth, lunar, and martian sidereal days; antimicrobial towels; performance wear for maximum comfort in spaceflight; and an everyday carry system for packing and tracking critical gear.
+
+Throughout the product exploration process, we identified mental and physical pain points that might better be addressed by rituals, exercises, services, and experiences. How could we design experiences that help maintain and replenish the wellbeing of space travellers who may suffer from exhaustion, anxiety, burnout, depression, homesickness, and loneliness?  
+
+## [ Ensuring psychological wellbeing during missions in extreme environments ]
+
+We were invited to participate in Lunares III SPECTRA (February 2018)–a 15-day isolated and confined lunar analogue mission simulation at Habitat Lunares in Piła, Poland. The mission simulated a 2030 moon mission to a permanently dark lunar crater. The mission goal: install electrical power to facilities for human habitation and deep space observation.
+
+The simulation would serve as a testbed to study physical, psychological and engineering challenges for habitability. Research from this program would be used toward artistic, scientific, educational, and outreach activities aimed at supporting life in space.
+
+The Lunares crew discussed the challenge of sleep deprivation during our team briefing. In fact, sleep disturbances, somatic complaints, heart palpitations, anxiety, mild forms of depression, and inconsistent motivation are frequently reported by crew members of longer space missions and are [well documented]("https://www.nasa.gov/pdf/607107main_PsychologySpaceExploration-ebook.pdf"). Extravehicular Activities (EVAs), such as space walks or activities on the moon’s surface, require heightened focus and attention. Astronauts are exposed to significant stressors while performing operations in dark, uneven, and hazardous environments. Ensuring the psychological health of astronauts during cognitively and physically demanding EVAs is particularly important to mission safety.
+
+Lunares III scheduled long periods of surface activity, where the crew left the Lunar outpost to perform experiments or install equipment. During these EVAs, the crew anticipated short periods of down time, while waiting for an experiment to complete or expecting further instruction from mission control. We were looking for creative solutions to improve the psychological health of the crew during EVAs. How might these short periods of down time during EVAs be utilized to replenish the crew’s focus and attention?
+
+We framed the project problem as:<br/>**During short periods of downtime, how might we help replenish the energy and focus of people working in extreme environments, such as Lunar EVAs?**
+
+## [ Scenario: Lunares III ]
+
+Set in 2030, the Lunares III simulation takes place inside a dark crater. Also known as “cold traps,” dark craters located at the lunar poles are permanently engulfed in frigid darkness. But shielded from the electromagnetic noise emitted by Earth, these dark craters provide pristine, unobstructed views of the universe. In this extreme environment, our crew conducts several surface missions to establish lunar facilities for extra-terrestrial habitation and deep space observation.
+
+In the midst of a seven hour EVA to collect distant crater samples, a surface crew member is cognitively and physically exhausted. They take a planned twenty minute break. Tapping the EVA helmet activates Interval. The visor dims, a soothing soundscape fills the helmet, and a voice guides the listener through a meditation practice. A subtle glow pulses in step with their heart rate, growing slower as they relax…
+
+Twenty minutes later, feeling replenished and with renewed focus, they bring their attention back to the mission.  
+
+## [ Interval: a wearable headset for short periods of rest and cognitive restoration ]
+
+We designed Interval to explore how short periods of rest during extravehicular activity (EVA) could improve mood and cognitive performance. Worn under the EVA helmet, Interval offers guided meditation, provides biofeedback, and is controlled through touchless gestural interactions.
+
+Interval is used by surface crew to:<br/>  
+- [Adjust ambient light entering the visor to shield the wearer from distracting light sources (e.g., vehicle lights, equipment LED’s, etc.).](https://fromlater.com/views/research/interval.html#-spacewares-personal-products-for-comfort-and-wellbeing-during-space-travel-)
+- [Select between audio guided meditation, white noise, and calming sounds to drown out the fatigue inducing hum from life support systems and other equipment](https://fromlater.com/views/research/interval.html#-ensuring-psychological-wellbeing-during-missions-in-extreme-environments-)
+- [Visualize their heartbeat through a pulse display. Biofeedback may help induce a sense of calm and focus.](https://fromlater.com/views/research/interval.html#-insights-and-speculations-)
+- [Measure their pulse throughout the mission, which can help identify and isolate stressors.](https://fromlater.com/views/research/interval.html#-further-outcomes-)
+
+
+As an exploratory project, Interval was built within a rapid two-week timeline and a restricted budget of $500 for hardware. We describe salient features below.<br/>  
+
+![Design of Interval](/images/61cb1e2705bb32824af5f2ed_interval_3.jpeg)
+
+
+### Gesture control
+
+Ideally, Interval’s features would be integrated directly into the EVA suit. However, for exploring the concept we designed Interval as a standalone device to be worn under the EVA helmet. This made it possible to prototype the headset in our studio without an EVA suit handy, it posed challenges during the actual mission. Worn under the EVA helmet, the crew would not have direct physical access to the Interval device.
+
+To solve this problem, we built in touchless controls for Interval using magnets.
+
+Interval uses a pair of “hall effect sensors,” i.e., materials that are highly sensitive to changes in magnetic fields, as device inputs. The two hall effect sensors act as independent switches. Each is activated by changing the nearby magnetic, i.e., by bringing a strong magnet in close proximity to the sensor. To interact with the sensors, the user wears magnetic straps (embedded with rare earth magnets) on each wrist. Once the hall effect sensors are fastened to the helmet visor via suction cups, the visor behaves as a rudimentary gestural interface. By swiping or tapping one’s wrist to the visor, the sensors are activated and perform various functions depending on the device mode.  
+
+![Rare earth magnets on wrist straps](/images/61cb1e2705bb32021ef5f2ee_interval_4-copy.jpeg)
+
+
+### Light shade
+
+Our intention with Interval was to allow dynamic control of all environmental variables–including lighting. (Lunares III mission would be performed in a dark crater, however ambient lighting from equipment is distracting and would interfere with the pulse feedback LED.) Interval uses a “light valve,” a technology otherwise used to black out welding helmets or adjust the opacity of LCD displays, to control ambient light levels inside the EVA helmet. When activated through gestures, an electronic signal is sent to the light valve, instantly dimming the visor and shielding the wearer from outside light. The wearer is cocooned, able to focus on themselves. 
+
+*Mission specialist Andreea Radulescu tested Interval during Lunares III.*
+
+### Biometric logging and feedback
+
+Interval’s pulse-oximeter in skin contact with the astronaut’s forehead logs the astronaut’s pulse throughout the mission. Logged data is saved on an SD card, which can be ejected and processed at the base.
+
+We installed a pulse feedback LED in the headset so wearers can visualize their pulse. This can be optionally enabled during the mission. Clinical research over the last 4 decades indicates that when humans gain a greater awareness of their bodily functions, they may be able to improve their performance or regulate their physiological state. Bio and neurofeedback are evolving methodologies for behavioural intervention with recent commercial applications in the nascent wearables industry. We suspect the efficacy of bio and neurofeedback will be more rigorously understood in the coming years, with increased industry activity to commercialize neurotechnology (including consumer grade implantable brain-machine interfaces).  
+
+### The Overview Effect
+
+While spaceflight can be stressful and isolating, many astronauts have reported a profound cognitive shift, especially while viewing the Earth, which appears small and fragile, from space. The “overview effect,” as it has been termed, describes this sense of blissful interconnectedness — unity with nature, universal camaraderie, and an expanded sense of home.
+
+When activated, Interval plays an audio track designed to stimulate (or simulate) the overview effect. The 30-minute composition of music, soundscape, and spoken vocal guides listeners into a receptive state—opening to the vastness of the universe, then evoking memories of comfort and home. The track juxtapose notions of infinity and oneness, home and away, earthly and cosmic, as a means of inducing the overview effect.
+
+For individuals exploring in extreme environments, the Overview Effect audio meditation may promote relaxation as it reveals the insignificance of conflict, worry, or stress relative to a higher purpose; in recognizing one’s inextricable connection to the cosmos, one recognizes the human role and capacity as a sensing element in the universe. Or as Carl Sagan has put it: “we are a way for the universe to know itself.”  
+
+<AudioPlayer src="https://fromlater.com/assets/mp3/interval_overview_effect.mp3" title="Interval" />
+
+## [ Insights and speculations ]
+
+Whether short, in situ periods of meditation can help individuals manage stress during extreme activities warrants more study. However, we are encouraged by the creative potential of the materials and methods we employed.
+
+Magnets to build novel, low cost gestural interfaces
+
+We are excited about numerous applications for magnetic gestural interfaces for scenarios where hand dexterity is compromised due to protective clothing or injury. Magnets combined with magnetic sensors provide a way to create a 3D input device for tracking movement. By sensing the relative strength of the magnetic fields by multiple sensors, one can triangulate the location of magnets in 3D space.
+
+Magnets come with their own challenges. The magnets we used to create the gesture interface attracted ferromagnetic debris. The placement of the magnets also increased dust build up affecting sensor responsiveness.
+
+Dynamic opacity in personal protective gear
+
+From sunglasses to face masks, electronically adjustable opacity can provide both aesthetic and functional benefits in wearables. Privacy and counter-surveillance, eye protection, and “facial displays” are some of the areas we are exploring. Ongoing research can be found on this [are.na channel]("https://www.are.na/from-later/masks-iuih9yuwyla").  
+
+## [ Further outcomes ]
+
+Sarah Jane Pell presented a paper at the 70th International Astronautical Congress IAC’19 held in Washington, D.C. 21-25 October 2019, titled [“Apollo and the Muses: a preliminary discussion of the cultural and technical inspirational knowledge embedded in the lunar space arts of an analogue mission.”]("https://www.researchgate.net/publication/337135994_Apollo_and_the_Muses_a_preliminary_discussion_of_the_cultural_and_technical_inspirational_knowledge_embedded_in_the_lunar_space_arts_of_an_analogue_mission")
+          
+![](/images/interval_1.jpeg)
 
 
 export const meta = {
@@ -38,7 +136,8 @@ export const meta = {
   img: `/images/img.jpeg`,
   intro: `In the midst of a seven hour lunar surface mission to collect distant crater samples, the astronaut is cognitively and physically exhausted.`,
   date: `Dec 2019`,
-  tags: ['Projects']
+  tags: ['Projects'],
+  sidebar: true
 }
 
 export default ({ children }) => <BlogLayout meta={meta}>{children}</BlogLayout>
