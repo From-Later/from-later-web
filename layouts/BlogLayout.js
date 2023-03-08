@@ -1,4 +1,5 @@
 import BasicLayout from '@/layouts/BasicLayout'
+
 import { useRef, useEffect, useState } from 'react'
 
 const Sidebar = ({ content }) => {
@@ -49,7 +50,7 @@ export default function BlogLayout({ meta, children }) {
           <div className="linewidth">
             <div className="article-title" ref={content}>
 
-            { children }
+              { children }
 
             </div>
           </div>

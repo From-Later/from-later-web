@@ -6,5 +6,5 @@ export async function getDustEntries () {
   const data = await response.json()
   const entries = data.contents
 
-  return entries
+  return entries.reverse()
 }

@@ -11,14 +11,14 @@ export default function EmbeddedVideo({ url, title, iframeProps, iframeStyles })
   }
 
   return (
-    <div style={{paddingTop:"56.17021276595745%"}} class="w-embed-youtubevideo">
+    <div style={{paddingTop:"56.17021276595745%"}} className="w-embed-youtubevideo">
       <iframe 
         src={url} 
         title={title}
-        frameborder="0" 
+        frameBorder="0" 
         style={style} 
         allow="autoplay; encrypted-media" 
-        allowfullscreen="" 
+        allowFullScreen={true} 
         { ...iframeProps }
       />
     </div>

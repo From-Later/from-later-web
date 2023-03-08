@@ -1,21 +1,39 @@
 import BlogLayout from '@/layouts/BlogLayout'
+import Label from '@/components/Label'
+
+export const meta = {
+  title: `Compersia`,
+  description: `Compersia`,
+  image: `/images/compersia_naz_r_large.jpeg`,
+  intro: `Compersia is a speculative future scenario. Based on signals of change observed in the world today, it is designed to provoke critical dialogue and inspire new thinking.`,
+  date: `Aug 2015`,
+  tags: ['Scenarios'],
+  sidebar: true,
+  label: [
+    {
+      name: "SCENARIO",
+      value: "Compersia is a mass-polyamory scenario characterized by multi-layered complex structures of transient kinship. Communication and ethics innovations empower people to negotiate quality relationships where partners find joy in their partners’ joy."
+    },
+    {
+      name: "FILE UNDER",
+      value: "Research-based, near-term, speculative futures; design fiction"
+    },
+    {
+      name: "PROJECT LEAD",
+      value: "[ Macy Siu ] *from later*"
+    },
+    {
+      name: "RESEARCH",
+      value: "M. Siu, R. Bolton, U. Vira, A. Alikpala"
+    }
+  ]
+}
 
 # Compersia
 
 Compersia is a speculative future scenario. Based on signals of change observed in the world today, it is designed to provoke critical dialogue and inspire new thinking. Click the headings below to learn more about Compersia and the signals of change that informed it.
 
-
-<div className="label">
-
-SCENARIO: Compersia is a mass-polyamory scenario characterized by multi-layered complex structures of transient kinship. Communication and ethics innovations empower people to negotiate quality relationships where partners find joy in their partners’ joy.
-
-FILE UNDER: Research-based, near-term, speculative futures; design fiction
-
-PROJECT LEAD: [ Macy Siu ] *from later*
-
-RESEARCH: M. Siu, R. Bolton, U. Vira, A. Alikpala
-
-</div>
+<Label meta={meta} />
 
 ## [ Scenario ]
 
@@ -166,15 +184,5 @@ The game was first workshopped at the SXSW x Mercedes Benz – Me Convention on 
 ![](/images/compersia_personacards-4.jpeg)
 ![](/images/compersia_polyculedesign.jpeg)
 
-
-export const meta = {
-  title: `Compersia`,
-  description: `Compersia`,
-  img: `/images/compersia_naz_r_large.jpeg`,
-  intro: `Compersia is a speculative future scenario. Based on signals of change observed in the world today, it is designed to provoke critical dialogue and inspire new thinking.`,
-  date: `Aug 2015`,
-  tags: ['Scenarios'],
-  sidebar: true
-}
 
 export default ({ children }) => <BlogLayout meta={meta}>{children}</BlogLayout>

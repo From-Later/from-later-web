@@ -1,22 +1,12 @@
 import mdx from '@next/mdx'
 import remarkGfm from 'remark-gfm'
 import rehypeSlug from 'rehype-slug'
-import remarkToc from 'remark-toc'
 import remarkFigureCaption from '@microflash/remark-figure-caption'
 
 
 const withMDX = mdx({
   options: {
-    remarkPlugins: [
-      remarkGfm,
-      remarkFigureCaption,
-      {
-        plugin: remarkToc,
-        options: {
-          heading: '[ Lexicon ]'
-        }
-      }
-    ],
+    remarkPlugins: [remarkGfm,remarkFigureCaption],
     rehypePlugins: [rehypeSlug]
   }
 })

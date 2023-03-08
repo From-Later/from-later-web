@@ -1,25 +1,7 @@
 import BlogLayout from '@/layouts/BlogLayout'
 import EmbeddedVideo from '@/components/EmbeddedVideo'
 import DustEntries from '@/components/DustEntries'
-
-# DUST
-
-<div className="label">
-**This site is updated continuously with new microscenarios.**   
-<br/>
-DEFINITION: A *microscenario* is a rapidly written, highly compressed expression (max. 100 words) of a focused but low-resolution idea from an emerging world
-
-DOCUMENTATION: Research, process, and technical documentation for DUST forthcoming
-
-PROJECT LEADS: [ U. Vira, V. Silins ] *from later*
-
-CONTRIBUTORS: M. Siu, R. Bolton, U. Vira, V. Silins
-</div>
-
-The following *microscenarios* are inspired by weak signals, literary microfictions, constrained writing techniques, and continuous creative outputs. Scroll down to explore and follow the DUST [are.na channel](https://www.are.na/from-later/dust-kq-fkdsqrss). sources? 
-
-
-<DustEntries />
+import Label from '@/components/Label'
 
 export const meta = {
   title: `DUST`,
@@ -27,7 +9,36 @@ export const meta = {
   quote: `A *microscenario* is a rapidly written, highly compressed expression`,
   intro: `The following *microscenarios* are inspired by weak signals, literary microfictions, constrained writing techniques, and continuous creative outputs.`,
   date: `NOV 2013`,
-  tags: ['Scenarios']
+  tags: ['Scenarios'],
+  label: [
+    { 
+      name: 'DEFINITION',
+      value: 'A *microscenario* is a rapidly written, highly compressed expression (max. 100 words) of a focused but low-resolution idea from an emerging world'
+    },
+    {
+      name: "DOCUMENTATION",
+      value: "Research, process, and technical documentation for DUST forthcoming"
+    },
+    {
+      name: "PROJECT LEADS",
+      value: "[ U. Vira, V. Silins ] *from later*"
+    },
+    {
+      name: "CONTRIBUTORS",
+      value: "M. Siu, R. Bolton, U. Vira, V. Silins"
+    }
+  ]
 }
+
+# DUST
+
+**This site is updated continuously with new microscenarios.**   
+
+<Label meta={meta} />
+
+The following *microscenarios* are inspired by weak signals, literary microfictions, constrained writing techniques, and continuous creative outputs. Scroll down to explore and follow the DUST [are.na channel](https://www.are.na/from-later/dust-kq-fkdsqrss). sources? 
+
+<DustEntries />
+
 
 export default ({ children }) => <BlogLayout meta={meta}>{children}</BlogLayout>

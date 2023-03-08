@@ -63,8 +63,8 @@ export default function Views({ posts }) {
                 return (
                   <a href={post.link} className="post w-inline-block" key={post.id}>
                     <div className={post.meta.color ? `post-image-holder ${post.meta.color}` : "post-image-holder"}>
-                      { post.meta.img ? (
-                        <img src={post.meta.img} loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, 92vw"  alt="" className="post-image"/>
+                      { post.meta.image ? (
+                        <img src={post.meta.image} loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, 92vw"  alt="" className="post-image"/>
                         ) : (
                         <div className="post-article-quote">{post.meta.quote}</div>
                         )

@@ -1,15 +1,7 @@
 import BlogLayout from '@/layouts/BlogLayout'
+import Label from '@/components/Label'
 import AudioPlayer from '@/components/AudioPlayer'
 import EmbeddedVideo from '@/components/EmbeddedVideo'
-
-# Title
-
-<div className="label">
-
-</div>
-
-## Subtitle
-
 
 export const meta = {
   title: ``,
@@ -19,7 +11,21 @@ export const meta = {
   date: ``,
   color: ``,
   sidebar: true,
-  tags: []
+  tags: [],
+  label: [
+    {
+      name: "NAME",
+      value: "Markdown goes here"
+    },
+  ]
 }
+
+
+# Title
+
+## Subtitle
+
+Content
+
 
 export default ({ children }) => <BlogLayout meta={meta}>{children}</BlogLayout>

@@ -1,5 +1,55 @@
 import BlogLayout from '@/layouts/BlogLayout'
 import AudioPlayer from '@/components/AudioPlayer'
+import Label from '@/components/Label'
+
+export const meta = {
+  title: `All of You`,
+  description: `All of You`,
+  quote: `"Close your eyes and breathe in. Take an enormous leap of faith."`,
+  intro: `“All of You” is № 02 in a series of songs from later — songs written as though created in a further future environment.`,
+  date: `Aug 2015`,
+  color: `red`,
+  sidebar: `true`,
+  tags: ['Scenarios', 'Recordings'],
+  label: [
+    {
+      name: "SONG",
+      value: "All of You"
+    },
+    {
+      name: "ARTIST",
+      value: "From Later"
+    },
+    {
+      name: "FEATURING",
+      value: "Zaki Ibrahim"
+    },
+    {
+      name: "COMPOSITION",
+      value: "Z. Ibrahim, A. Johnson, W. Johnson, R. Bolton, M. Siu"
+    },
+    {
+      name: "SERIES",
+      value: "Research-based, speculative songs"
+    },
+    {
+      name: "SCENARIO", 
+      value: `Compersia is a mass-polyamory scenario characterized by multi-layered complex structures of transient kinship. Communication and ethics innovations empower people to negotiate quality relationships where partners find joy in their partners’ joy.`
+    },
+    {
+      name: "RESEARCH",
+      value: "M. Siu, R. Bolton, U. Vira, A. Alikpala"
+    },
+    {
+      name: "ART",
+      value: "N. Rahbar"
+    },
+    {
+      name: "ISRC",
+      value: "QM-EU3-19-02043"
+    }
+  ]
+}
 
 # All of You
 
@@ -7,25 +57,7 @@ import AudioPlayer from '@/components/AudioPlayer'
 
 <AudioPlayer src="https://fromlater.com/assets/mp3/all_of_you.mp3" title="Lonely Arcade" />
 
-<div className="label">
-SONG: All of You
-
-ARTIST: From Later
-
-FEATURING: Zaki Ibrahim
-
-COMPOSITION: Z. Ibrahim, A. Johnson, W. Johnson, R. Bolton, M. Siu
-
-SERIES: Research-based, speculative songs
-
-SCENARIO: Compersia is a mass-polyamory scenario characterized by multi-layered complex structures of transient kinship. Communication and ethics innovations empower people to negotiate quality relationships where partners find joy in their partners’ joy.
-
-RESEARCH: M. Siu, R. Bolton, U. Vira, A. Alikpala
-
-ART: N. Rahbar
-
-ISRC: QM-EU3-19-02043
-</div>
+<Label meta={meta} />
 
 ## [ Scenario ]
 
@@ -137,15 +169,5 @@ Compersia
         
 "All of You" was premiered at TEDxToronto on October 26, 2018.
 
-export const meta = {
-  title: `All of You`,
-  description: `All of You`,
-  quote: `"Close your eyes and breathe in. Take an enormous leap of faith."`,
-  intro: `“All of You” is № 02 in a series of songs from later — songs written as though created in a further future environment.`,
-  date: `Aug 2015`,
-  color: `red`,
-  sidebar: `true`,
-  tags: ['Scenarios', 'Recordings']
-}
 
 export default ({ children }) => <BlogLayout meta={meta}>{children}</BlogLayout>

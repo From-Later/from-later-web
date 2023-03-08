@@ -1,9 +1,13 @@
+import RotateOnScroll from '@/components/RotateOnScroll'
+
 export default function Navigation(){
   return (
     <div className="navigation w-clearfix wf-section">
-      <a href="/" aria-current="page" className="nav-logo w-inline-block w--current">
-        <img src="/images/fllogo-01.svg" loading="lazy" data-w-id="49c910d7-11d3-14d6-6350-5f53a727c92c" alt="" className="nav-logo-img" />
-      </a>
+        <a href="/" aria-current="page" className="nav-logo w-inline-block w--current">
+      <RotateOnScroll>
+          <img id="fl-logo" src="/images/fllogo-01.svg" loading="lazy" data-w-id="49c910d7-11d3-14d6-6350-5f53a727c92c" alt="" className="nav-logo-img" />
+      </RotateOnScroll>
+        </a>
       <div className="menu-links">
         <a href="/views" className="navigation-link w-inline-block">
           <div>Views</div>
