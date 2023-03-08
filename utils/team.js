@@ -18,8 +18,10 @@ export async function getTeammates () {
       const teammatesWithGifs = teammatesWithImages.map(t => {
         const name = t.title
         const gif = gifs.find(g => g.title === t.title)
-        return { ...t, gif: gif?.image }
+
+        return { ...t, gif: gif ? gif.image : null } 
       })
+      
       return { items: teammatesWithGifs.reverse() }
     }
 
