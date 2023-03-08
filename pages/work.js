@@ -2,9 +2,17 @@ import BasicLayout from '@/layouts/BasicLayout'
 import { getProjects } from '@/utils/projects'
 
 export async function getStaticProps() {
-  const projects = await getProjects()
+  const { err, items } = await getProjects()
+
+  if (err) {
+    console.log(err)
+    return {
+      props: { projects: null },
+    }
+  }
+
   return {
-    props: { projects },
+    props: { projects: items },
   }
 }
 
@@ -24,6 +32,7 @@ export default function Work({ projects }) {
       </div>
       <div className="about-from-later wf-section">
         <div className="home-intro">
+        { projects &&
           <div className="horizontal-scroll">
             <h3 className="heading-3"><strong>Timeline of projects →</strong></h3>
             <div className="scroll-wrap">
@@ -38,6 +47,7 @@ export default function Work({ projects }) {
               </div>
             </div>
           </div>
+        }
           <div className="about-list w-clearfix">
             <h3 className="heading-3"><strong>Clients, partners, and projects:</strong></h3>
             <div className="column-list">

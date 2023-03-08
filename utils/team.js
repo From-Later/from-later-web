@@ -1,9 +1,9 @@
-import { ARENA_TEAM_CHANNEL_ID, ARENA_TEAM_GIFS_CHANNEL_ID } from '@/utils/constants'
+import { ARENA_CHANNELS_ENDPOINT, ARENA_TEAM_CHANNEL_ID, ARENA_TEAM_GIFS_CHANNEL_ID } from '@/utils/constants'
 
 export async function getTeammates () {
   try {
-    const teamUrl = `https://api.are.na/v2/channels/${ARENA_TEAM_CHANNEL_ID}?per=100`
-    const gifsUrl = `https://api.are.na/v2/channels/${ARENA_TEAM_GIFS_CHANNEL_ID}?per=100`
+    const teamUrl = `${ARENA_CHANNELS_ENDPOINT}${ARENA_TEAM_CHANNEL_ID}?per=100`
+    const gifsUrl = `${ARENA_CHANNELS_ENDPOINT}${ARENA_TEAM_GIFS_CHANNEL_ID}?per=100`
     
     const teamResponse = await fetch(teamUrl)
     const teamData = await teamResponse.json()
@@ -20,10 +20,10 @@ export async function getTeammates () {
         const gif = gifs.find(g => g.title === t.title)
         return { ...t, gif: gif?.image }
       })
-      return teammatesWithGifs.reverse()
+      return { items: teammatesWithGifs.reverse() }
     }
 
-    return teammatesWithImages.reverse()
+    return { items: teammatesWithImages.reverse() }
   } catch (err) {
     return { msg: "Error fetching data", err }
   }

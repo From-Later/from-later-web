@@ -2,9 +2,17 @@ import BasicLayout from '@/layouts/BasicLayout'
 import { getTeammates } from '@/utils/team'
 
 export async function getStaticProps() {
-  const teammates = await getTeammates()
+  const { err, items } = await getTeammates()
+  
+  if (err) {
+    console.log(err)
+    return {
+      props: { teammates: null },
+    }
+  }
+
   return {
-    props: { teammates },
+    props: { teammates: items },
   }
 }
 
@@ -12,7 +20,7 @@ const meta = {
   title: "Team"
 }
 
-export default function Team({ teammates }) {
+export default function Team({ teammates=[] }) {
   return (
     <BasicLayout meta={meta}>
       <div className="header wf-section">
