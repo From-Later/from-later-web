@@ -768,9 +768,10 @@ blockquote {
 }
 
 .scroll-container {
-  width: 400%;
+  width: fit-content;
   margin-top: 10px;
   padding-bottom: 40px;
+  display: inline-flex;
 }
 
 .timeline-hover-arrow {
