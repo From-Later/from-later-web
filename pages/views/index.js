@@ -62,7 +62,7 @@ export default function Views({ posts }) {
               filteredPosts.map(post => {
                 return (
                   <a href={post.link} className="post w-inline-block" key={post.id}>
-                    <div className={post.meta.color ? `post-image-holder ${post.meta.color}` : "post-image-holder"}>
+                    <div className={post.meta.red ? `post-image-holder red` : "post-image-holder"}>
                       { post.meta.image ? (
                         <img src={post.meta.image} loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, 92vw"  alt="" className="post-image"/>
                         ) : (

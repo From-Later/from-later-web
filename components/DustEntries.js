@@ -31,7 +31,7 @@ export default function DustEntries() {
         return (
           <div className="dust-post" key={entry.id}>
             <h2>{entry.title}</h2>
-            <h3>{`DUST${number}`}</h3>
+            <h3 className="label-intro">{`DUST${number} ⦁ added by ${entry.user.username}`}</h3>
             <div dangerouslySetInnerHTML={{__html: entry.content_html }} />
           </div>
         )

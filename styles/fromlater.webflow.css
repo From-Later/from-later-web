@@ -69,6 +69,14 @@ a {
   text-decoration: none;
 }
 
+p a {
+  color: #a24b00;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
 ul {
   margin-bottom: 0px;
   font-size: 0.8em;
@@ -108,6 +116,7 @@ blockquote {
   display: inline-block;
   padding-top: 100px;
   padding-bottom: 100px;
+  width: 100%;
 }
 
 .side-bar {
@@ -249,6 +258,11 @@ blockquote {
   padding-bottom: 60px;
 }
 
+.linewidth.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .full-size-image {
   width: 100%;
   margin-right: auto;
@@ -332,6 +346,10 @@ blockquote {
   position: relative;
   padding: 60px 40px;
   background-color: #ff9d29;
+}
+
+.footer-contact a {
+  color: #29292a;
 }
 
 .header-learn-more {
@@ -653,6 +671,7 @@ blockquote {
   display: none;
   background-color: rgba(255, 157, 41, 0.25);
   text-align: left;
+  z-index: 101;
 }
 
 .pop-up {
@@ -671,6 +690,10 @@ blockquote {
   -webkit-transform: translate(0px, -50%);
   -ms-transform: translate(0px, -50%);
   transform: translate(0px, -50%);
+}
+
+.pop-up a {
+  color: #29292a;
 }
 
 .contact-sections {
@@ -782,8 +805,9 @@ blockquote {
 
 ._16 {
   display: block;
-  min-width: 16.66%;
+  min-width: 15%;
   float: left;
+  margin-right: 10px;
 }
 
 .small {
@@ -905,6 +929,9 @@ blockquote {
   object-fit: cover;
 }
 
+.navigation, .content, .wf-section {
+  scrollbar-color: #ff9d29 transparent;
+}
 
 .navigation::-webkit-scrollbar {
   background:transparent;
@@ -997,7 +1024,7 @@ blockquote {
 .fl-lexicon-toc a {
   white-space: nowrap;
   font-size: 0.85em;
-  letter-spacing: 5px;
+  letter-spacing: 1px;
 }
 
 
@@ -1006,7 +1033,7 @@ blockquote {
     font-size: 3.5em;
   }
 
-  li {
+  li, ._33 {
     min-width: 50%;
   }
 }
@@ -1016,7 +1043,7 @@ blockquote {
     font-size: 2em;
   }
 
-  li {
+  li, ._33 {
     min-width: 100%;
   }
 

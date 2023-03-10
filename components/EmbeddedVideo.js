@@ -1,4 +1,4 @@
-export default function EmbeddedVideo({ url, title, iframeProps, iframeStyles }){
+export default function EmbeddedVideo({ src, title, iframeProps, iframeStyles }){
 
   const style = {
     position:"absolute",
@@ -13,7 +13,7 @@ export default function EmbeddedVideo({ url, title, iframeProps, iframeStyles })
   return (
     <div style={{paddingTop:"56.17021276595745%"}} className="w-embed-youtubevideo">
       <iframe 
-        src={url} 
+        src={src} 
         title={title}
         frameBorder="0" 
         style={style} 

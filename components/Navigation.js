@@ -31,7 +31,7 @@ export default function Navigation(){
             </div>
           </a>
           <div className="contact-sections">
-            <p>For new projects, business, collaborations, speaking, press, or general enquiries, please email us at: <a href="#" className="link">mail@fromlater.com</a>
+            <p>For new projects, business, collaborations, speaking, press, or general enquiries, please email us at: <a href="mailto:mail@fromlater.com" className="link">mail@fromlater.com</a>
             </p>
           </div>
           <div className="contact-sections">

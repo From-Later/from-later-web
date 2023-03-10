@@ -19,7 +19,7 @@ const Sidebar = ({ content }) => {
   }
 
   return (
-    <>
+    <div className="side-bar">
       <ul role="list" className="sidebar-list w-list-unstyled">
         {[...headings].map(heading => {
           return(
@@ -32,7 +32,7 @@ const Sidebar = ({ content }) => {
         })}
       </ul>
       <div className="access"></div>
-    </> 
+    </div> 
   )
 }
 
@@ -41,13 +41,11 @@ export default function BlogLayout({ meta, children }) {
   return (
     <BasicLayout meta={meta}>
       <div className="copy w-clearfix fl-blog-post">
-        <div className="side-bar">
-          { meta.sidebar &&
-            <Sidebar content={content} />
-          }
-        </div>
+        { meta.sidebar &&
+          <Sidebar content={content} />
+        }
         <div className="main">
-          <div className="linewidth">
+          <div className={`linewidth ${meta.sidebar ? "" : "center"}`}>
             <div className="article-title" ref={content}>
 
               { children }
