@@ -12,7 +12,7 @@ You can see a preview of your new changes by pushing to a different branch, like
 
 ### How to add a blog post
 
-The blog posts are sourced from the file system, specifically the `pages/views` directory. The posts are written in MDX, which is a combination of Markdown and JSX. You can combine markdown and React components in these files. Each file exports a special variable called `meta`, which is used to build the blog page and add it to the main Views page. 
+The blog posts are sourced from the file system, specifically the `/pages/views` directory. The posts are written in MDX, which is a combination of Markdown and JSX. You can combine markdown and React components in these files. Each file exports a special variable called `meta`, which is used to build the blog page and add it to the main Views page. 
 
 Here are the steps for adding a new blog post to the website:
 
@@ -41,7 +41,7 @@ Keep in mind that if you are using the `sidebar` option, all your H2 tags (##) w
 
 #### 4. Add images or other files to the `/public` folder. 
 
-If you are using images in your blog post, add the image file to the `/public/images` folder so that they will be hosted. Everythign in the `/public` folder gets hosted at the root domain level, so when you're putting the link in your content you can omit the '/public' part of the path. So for example if you added a file at `/public/images/my_cool_photo.jpg`, you would display it in your post as: 
+If you are using images in your blog post, add the image file to the `/public/images` folder so that they will be hosted. Everything in the `/public` folder gets hosted at the root domain level, so when you're putting the link in your content you can omit the '/public' part of the path. So for example if you added a file at `/public/images/my_cool_photo.jpg`, you would display it in your post as: 
 ```
 ![My cool photo](/images/my_cool_photo.jpg)
 ```
@@ -56,7 +56,7 @@ Vercel will automatically build and publish any commits pushed to the `main` bra
 
 The Team page is populated by two Are.na feeds. The primary one is the [From Later Team](https://www.are.na/sharon-kennedy/from-later-team) feed that includes the photo, name, and bio for each person. The secondary feed is the [From Later Team Gifs](https://www.are.na/sharon-kennedy/from-later-team-gifs) feed that just has the GIFS that show up when you hover on someone's picture. 
 
-Here are the steps to update a team member:
+Here are the steps to add a team member:
 
 - Create a new image block in the From Later Team feed by uploading the person's photo. The title of the block should be the person's name, and the description is their bio. 
 - Drag the block into the order that you want it to show up in.
