@@ -717,7 +717,7 @@ blockquote {
 .close-pop-up {
   position: absolute;
   left: auto;
-  top: 0%;
+  top: 20px;
   right: 0%;
   bottom: auto;
   z-index: 10;
@@ -1089,6 +1089,23 @@ blockquote {
 
   .about-list {
     margin-top: 40px;
+  }
+
+  .fl-blog-post {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .fl-blog-post .side-bar {
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    top: unset;
+  }
+
+  .fl-blog-post .side-bar .list-link {
+    padding-left: 40px;
   }
 }
 
