@@ -16,7 +16,11 @@ The blog posts are sourced from the file system, specifically the `/pages/views`
 
 Here are the steps for adding a new blog post to the website:
 
-#### 1. Make a duplicate of the file `/pages/views/TEMPLATE.mdx`
+#### 1. Create a new file in `/pages/views`
+
+[Create a new file in the views folder](https://github.com/From-Later/from-later-web/new/main/pages/views). The name of the file will be the pathname of the URL, so it should reflect the title of your post, and the file should have the `.mdx` extension. E.g. if the title of your post is "Lonely Arcade" a good filename for it would be `lonely-arcade.mdx`. Then when the website is published the post will be at `fromlater.com/views/lonely-arcade`. 
+
+Copy in the contents of the template from [`/pages/views/TEMPLATE.mdx`](https://github.com/From-Later/from-later-web/blob/main/pages/views/TEMPLATE.mdx?plain=1) into your new file.
 
 #### 2. Fill out the `meta` variable with the relevant information. The fields are as follows:
 
@@ -35,9 +39,18 @@ Here are the steps for adding a new blog post to the website:
 
 Below the `meta` variable, write your content in Markdown. [Github Flavored Markdown](https://github.github.com/gfm/) is supported (so you can do tables, strikethrough, and task lists). 
 
-There are two custom components that you can use in your post, which are the `AudioPlayer` and `EmbeddedVideo`. They both require the `src` and `title` properties to be provided. See `/views/lonely-arcade.mdx` for an example of how to use the AudioPlayer and `/views/broadcast.mdx` for an example of the EmbeddedVideo. 
-
 Keep in mind that if you are using the `sidebar` option, all your H2 tags (##) will be used in the sidebar table of contents so consider the length of the title, the number of titles, and the text itself. If you want a subtitle that won't be included in the sidebar, use H3 or higher. 
+
+##### Custom components you can use in your post
+
+**Label**
+You can place the Label component anywhere in your post, just move the line `<Label meta={meta} />` where you want it to appear. No need to add any additonal props.
+
+**Embedded Video**
+The EmbeddedVideo component is for embedding a video like from Youtube or Vimeo. It requires the `src` prop and a `title` properties to be provided. See [`/views/broadcast.mdx`](https://github.com/From-Later/from-later-web/blob/main/pages/views/broadcast.mdx?plain=1#L61) for an example of the EmbeddedVideo. Note: it's actually just an iframe so you could use it for other embedded content if you want! 
+
+**AudioPlayer**
+The AudioPlayer embeds an audio player and it also requires the `src` and `title` properties. See [`/views/lonely-arcade.mdx`](https://github.com/From-Later/from-later-web/blob/main/pages/views/lonely-arcade.mdx?plain=1#L56) for an example of how to use the AudioPlayer. 
 
 #### 4. Add images or other files to the `/public` folder. 
 
@@ -50,7 +63,7 @@ Another point to note is that if you include alt text for your photo, it will al
 
 #### 5. Commit and push your changes to trigger a build
 
-Vercel will automatically build and publish any commits pushed to the `main` branch on Github. So to publish your new blog post, you simply push your changes to the `main` branch and wait for the build to finish.
+Vercel will automatically build and publish any commits pushed to the `main` branch on Github. So to publish your new blog post, you simply save your commit and push your changes to the `main` branch and wait for the build to finish.
 
 ### How to update the Team page
 
@@ -91,3 +104,11 @@ Next.js has a special directory for hosting static files. Any files in `/public`
 
 Most of the configuration is set in the `/utils/constants.js` file. This is where you can update the Are.na channels used, or the default meta data for the page templates. This is only for Ylient-side configuration, so don't put any secret keys or any other sensitive data in this file. Uou can create an `.env` file if necessary. 
 
+## Local development
+
+1. Clone the repo: `git clone git@github.com:From-Later/from-later-web.git`
+2. Move into the project directory: `cd from-later-web`
+3. Install the dependencies: `npm install`
+4. Start the development server: `npm run dev`
+
+See the [Next.js Readme](https://github.com/From-Later/from-later-web/blob/main/NEXTJS_README.md) and [Next.js documentation](https://nextjs.org/docs) to learn how to develop the website locally.
