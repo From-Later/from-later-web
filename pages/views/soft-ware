@@ -1,0 +1,68 @@
+import BlogLayout from '@/layouts/BlogLayout'
+import Label from '@/components/Label'
+import AudioPlayer from '@/components/AudioPlayer'
+import EmbeddedVideo from '@/components/EmbeddedVideo'
+
+export const meta = {
+  title: `software`,
+  description: `This project probes a potential future paradigm for how everyday things might be continually patched and recrafted — updated like software.`,
+  image: ``,
+  quote: `How will we care for and repair our everyday things?`,
+  red: false,
+  intro: `This project probes a potential future paradigm for how everyday things might be continually patched and recrafted — updated like software.`,
+  image`,
+  date: `Mar 2023`,
+  sidebar: true,
+  tags: [
+    "Scenarios"
+  ],
+  label: [
+    {
+      name: "PROJECT LEAD",
+      value: "Erica Whyte"
+    }, {
+      name: "PHOTOGRAPHY",
+      value: "Ruth Titus"
+    }, {
+      name: "SET STYLIST",
+      value: "Hope Elder"
+    }, {
+      name: "PRODUCTION SUPPORT",
+      value: "Mercedes Sharpe, Simay Ozturk, Nat Saavendra, Sizwe Inkingi, Hope Elder."
+    },{
+      name: "POST PRODUCTION",
+      value: "Jeremy Glenn"
+    },{
+      name: "RESEARCH & WORLDBUILDING SUPPORT",
+      value: "R. Bolton, J. Glenn, V. Silins, U, Vira, J. Sanscartier, A. Alikpala"
+    }
+  ]
+}
+
+
+# Soft.ware
+
+<Label meta={meta} />
+
+SOFT.WARE is a speculative photo-narrative illustrating a mundane encounter among people in a cooperative upcycling facility: two friends are looking to patch a torn and worn-out blouse. Though they're enthusiastic about the craft atmosphere of the community space, they're disappointed to find the traditional materials they loved have become outmoded.
+
+## Subtitle
+
+Content
+
+
+export default ({ children }) => <BlogLayout meta={meta}>{children}</BlogLayout>
+Footer
+© 2023 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
