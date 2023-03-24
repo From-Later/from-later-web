@@ -2,17 +2,9 @@ export const POST_TAGS = [
   "Scenarios",
   "Techniques",
   "Sensemaking",
-  "Broadcast",
   "Recordings",
-  "DaaPS",
-  "Memory Work",
-  "Press",
   "Media",
   "Services",
-  "Events",
-  "Talks",
-  "Case Studies",
-  "Projects"
 ]
 
 export const ARENA_CHANNELS_ENDPOINT="https://api.are.na/v2/channels/"
