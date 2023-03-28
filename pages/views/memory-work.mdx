@@ -1,0 +1,39 @@
+import BlogLayout from '@/layouts/BlogLayout'
+import Label from '@/components/Label'
+import AudioPlayer from '@/components/AudioPlayer'
+import EmbeddedVideo from '@/components/EmbeddedVideo'
+
+export const meta = {
+  title: `Memory Work`,
+  description: `A future Toronto characterized by collective care and politics that value nurturing over growth through a continuous program of workshops, speculative audio works, filmic worldbuilding, durational performances, a public monument, and the Memory Work Collective`,
+  image: `/images/memory-work-thumb.png`,
+  quote: `Memory Work offers a means toward understanding our relationship to the future, so that we might see ourselves creating it.`,
+  red: false,
+  intro: `A future Toronto characterized by collective care and politics that value nurturing over growth through a continuous program of workshops, speculative audio works, filmic worldbuilding, durational performances, a public monument, and the Memory Work Collective`,
+  date: `Sept 2020`,
+  sidebar: false,
+  tags: [
+    "Scenarios",
+    "Media",
+  ],
+  label: [
+    {
+      name: "NAME",
+      value: "Markdown goes here"
+    },
+  ]
+}
+
+
+# Memory Work
+
+A future Toronto characterized by collective care and politics that value nurturing over growth through a continuous program of workshops, speculative audio works, filmic worldbuilding, durational performances, a public monument, and the Memory Work Collective
+
+<Label meta={meta} />
+
+## Speculative Soundscape
+
+A future Toronto characterized by collective care and politics that value nurturing over growth through a continuous program of workshops, speculative audio works, filmic worldbuilding, durational performances, a public monument, and the Memory Work Collective
+
+
+export default ({ children }) => <BlogLayout meta={meta}>{children}</BlogLayout>
