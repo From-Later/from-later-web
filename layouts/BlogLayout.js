@@ -39,7 +39,7 @@ const Sidebar = ({ content }) => {
 export default function BlogLayout({ meta, children }) {
   const content = useRef(null)
   return (
-    <BasicLayout meta={meta}>
+    <BasicLayout meta={{ ...meta, type: "article" }}>
       <div className="copy w-clearfix fl-blog-post">
         { meta.sidebar &&
           <Sidebar content={content} />

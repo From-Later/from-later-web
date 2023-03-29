@@ -18,5 +18,6 @@ export const URL_DOMAIN = "https://fromlater.com"
 export const DEFAULT_META = {
   title: "From Later",
   description: "From Later is a foresight studio. We monitor and make sense of change, developing clear-sighted and judicious futures perspectives.",
-  image: "https://fromlater.com/assets/images/interval_2.jpg"
+  image: "https://fromlater.com/images/share.jpg",
+  type: "website"
 }

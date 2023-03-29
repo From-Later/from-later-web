@@ -6,7 +6,7 @@ import Footer from '@/components/Footer'
 import { DEFAULT_META, URL_DOMAIN } from '@/utils/constants'
 
 export default function BasicLayout({ meta, children }) {
-  const { title, description, image } = { ...DEFAULT_META, ...meta }
+  const { title, description, image, type } = { ...DEFAULT_META, ...meta }
   const router = useRouter()
   const url = `${URL_DOMAIN}${router.pathname}`
 
@@ -28,6 +28,7 @@ export default function BasicLayout({ meta, children }) {
         <meta property="og:url" content={url} />
         <meta property="og:image" content={image} />
         <meta property="og:description" content={description} />
+        <meta property="og:type" content={type}/>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navigation />
