@@ -9,6 +9,7 @@ export default function BasicLayout({ meta, children }) {
   const { title, description, image, type } = { ...DEFAULT_META, ...meta }
   const router = useRouter()
   const url = `${URL_DOMAIN}${router.pathname}`
+  const imageUrl = image.startsWith(URL_DOMAIN) ? image : `${URL_DOMAIN}${image}`
 
   return (
     <>
@@ -16,17 +17,17 @@ export default function BasicLayout({ meta, children }) {
         <title>{title}</title>
         <meta name="description" content={description} />
         <link rel="icon" href="/favicon.ico" />
-        <meta name="image" content={image} />
+        <meta name="image" content={imageUrl} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={title} />
         <meta name="twitter:url" content={url} />
         <meta name="twitter:description" content={description} />
-        <meta name="twitter:image" content={image} />
+        <meta name="twitter:image" content={imageUrl} />
         <meta name="twitter:creator" content="@since21XX" />
         <meta property="og:title" content={title} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={url} />
-        <meta property="og:image" content={image} />
+        <meta property="og:image" content={imageUrl} />
         <meta property="og:description" content={description} />
         <meta property="og:type" content={type}/>
         <link rel="icon" href="/favicon.ico" />
