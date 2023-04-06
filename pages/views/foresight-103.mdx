@@ -1,0 +1,88 @@
+import BlogLayout from '@/layouts/BlogLayout'
+import Label from '@/components/Label'
+import AudioPlayer from '@/components/AudioPlayer'
+import EmbeddedVideo from '@/components/EmbeddedVideo'
+
+export const meta = {
+  title: `5 Steps 2 4 Sight`,
+  description: `Understanding a typical foresight process for businesses`,
+  image: `/images/foresight103.jpg`,
+  red: false,
+  intro: `Understanding a typical foresight process for businesses`,
+  date: `2019`,
+  sidebar: false,
+  tags: [
+    "Services",
+  ],
+  label: [
+    {
+      name: "AUTHOR",
+      value: "R. Bolton"
+    },
+    {
+      name: "INSTITUTION",
+      value: "MaRS"
+    },
+    {
+      name: "PURPOSE",
+      value: "Guided foresightation; business tango; tailoring an approach"
+    },
+  ]
+}
+
+
+# Foresight in Five Steps
+The following article is part of the MaRS Discovery District's _Startup Toolkit_ and is reposted with permission. The original is [available here](https://learn.marsdd.com/article/foresight-in-five-steps-for-smes-and-startups/).
+
+<Label meta={meta} />
+
+Ideally, foresight is practiced on a continuous basis and becomes an input to your strategic planning process. While there are many tools and techniques you can apply throughout, here’s an overview of what the foresight cycle can look like in five simple steps:
+
+## 1. Determine the scope
+
+Define the parameters of your foresight initiative. What are the business challenges you want to solve? You might be looking to develop a perspective on how a specific consumer technology category will evolve over the next 10 years. Or you might be applying foresight more generally, framing your initiative with a question like: “How might our operating environment change over the next 15 years?” From there, you can orient your foresight initiative toward more specific strategic outcomes like: “identify new pathways to revenue growth” or “prepare to navigate risks associated with a changing regulatory environment.”
+
+## 2. Articulate the current state
+
+Foresight is about understanding how a given system could change. You can’t do that until you clearly understand that system in its current state.
+
+Let’s say you’re conducting a broad foresight study on how your company’s operating environment could change over the next 15 years. Map out what you know about your operating environment today, including:
+
+1. Your markets
+2. Your industry and competitive landscape
+3. The various forces and variables that affect your business
+
+The point is to document what you know-do it rapidly and don’t overthink it. Once you’ve got a handle on the current state, how do you see it changing over time? Make a list of your assumptions for the future. What are you less certain about?
+
+## 3. Scan for weak signals of change
+
+This is the research phase and arguably the most important part of the foresight cycle. Scanning is the process of identifying weak signals of change. These are things you observe in the world that you suspect could influence the future of your business in significant ways-often because they represent potential opportunities or threats.
+
+A weak signal of change could be anything-from a new startup, unique business model or technological patent, to a social movement or an emerging consumer behaviour. The point of this exercise is to challenge your assumptions, so think outside of your industry. Look beyond your usual sources of information. Explore the edges of what you could conceivably call your competitive landscape.
+
+For each signal you find, write a few sentences about what it is, where you found it, why it’s relevant and what you think it might mean for the future. Once your team has amassed a diverse collection of signals (50–100 depending on the scope of your project), cluster them into thematic groupings, based on the common features or patterns you find. The final output of this phase, the scan document, provides a shared understanding of what’s changing, so your team can have more productive strategic discussions.
+
+## 4. Generate possibilities
+
+This is where research meets imagination. The thematic groupings you developed in the previous phase serve as the raw material for generating ideas about the future. Think about how the various patterns of change could interact with one another and what kinds of futures could emerge.
+
+You’ll want to start by reviewing your research and identifying the critical uncertainties; i.e., the issues you’ve identified as being both high in impact and uncertainty. If you’re not sure how it’s going to be play out, but you’re pretty sure it’s going to be important, it’s worthy of your attention. Create a list of critical uncertainties and explore the various ways they could evolve and interact.
+
+As you generate ideas about the future, you’ll generally be thinking about two high-level objectives: **growth** and **resilience**.
+
+To identify new **growth** opportunities, focus your activities around generating ideas for new lines of business, products, services, markets, user acquisition strategies, or other initiatives that represent new pathways to profit and revenue growth.
+
+To help build **resilience**, focus on generating a range of future scenarios based on the critical uncertainties that could affect your business. This process will help you identify potential challenges that your company may face over the next five to 15 years.
+
+## 5. Determine your foresight strategy
+
+Here’s where we apply the knowledge we acquired over the course of the foresight initiative and transform it into actionable strategies. You’ll need to prioritize. Based on your new assumptions about the future, which strategic pathways are most appropriate for your company to follow? Consider the value of the opportunity and what it would take to successfully pursue it. How big is the potential market? What kinds of investments and capabilities are required? What do you risk by pursuing this opportunity? What do you risk if you don’t?
+
+Once you’ve zeroed in on a few pathways, make sure your team is aligned on the vision of success. What does it look like to successfully capitalize on the opportunities you’ve identified? What’s the approximate timeline? Note some key milestones based on the pace of change you anticipate. Then work backwards. What do you have to do to achieve each of these milestones?
+
+We call this process _backcasting_; it means planning in reverse, starting with a vision of success and connecting it to the present. After a few rounds of backcasting, you’ll begin to form a clear idea of how to execute your new strategy for long-term growth.
+
+Finally, you may want to revisit some of your scenarios to make sure your strategy holds up across a range of possible futures. We call this _wind tunnelling_, a term borrowed from aerospace engineering, where an aircraft’s integrity is tested in a wind tunnel that simulates the conditions of flight. In foresight, it’s more of a thought experiment. We imagine and think critically about how our strategy holds up under the pressures of various scenarios and refine it accordingly.
+
+
+export default ({ children }) => <BlogLayout meta={meta}>{children}</BlogLayout>
