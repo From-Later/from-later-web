@@ -1,0 +1,72 @@
+import BlogLayout from '@/layouts/BlogLayout'
+import Label from '@/components/Label'
+import AudioPlayer from '@/components/AudioPlayer'
+import EmbeddedVideo from '@/components/EmbeddedVideo'
+
+export const meta = {
+  title: `Foresight 101`,
+  description: `A gentle introduction to strategic foresight`,
+  image: `/images/foresight101.png`,
+  red: false,
+  intro: `A gentle introduction to strategic foresight for businesses and non-profits`,
+  date: `2019`,
+  sidebar: false,
+  tags: [
+    "Services",
+  ],
+  label: [
+    {
+      name: "AUTHOR",
+      value: "R. Bolton"
+    },
+    {
+      name: "INSTITUTION",
+      value: "MaRS"
+    },
+    {
+      name: "PURPOSE",
+      value: "Influence operations"
+    },
+  ]
+}
+
+
+# Strategic Foresight 101
+The following article is part of the MaRS Discovery District's _Startup Toolkit_ and is reposted with permission. The original is [available here](https://learn.marsdd.com/article/strategic-foresight-for-smes-and-startups/).
+
+<Label meta={meta} />
+
+What is strategic foresight? It’s a set of techniques for dealing with uncertainty and capitalizing on change. Foresight is a discipline for understanding how issues unfolding today could affect your organization tomorrow.
+
+Think of it as a process for challenging your current assumptions about the future and replacing them with a new set of considerations. It takes effort. The payoff is ensuring your strategy is tenable across a range of possible futures.
+
+## Why foresight?
+
+### Agility
+With a clear perspective on how your business environment is changing, you’ll be aware of the signposts and prepared to reorient your course of action as needed.
+
+### New growth
+Foresight provides a lens to look beyond your immediate field of vision. The long-term view helps you identify unseen opportunities, generate novel ideas and capitalize on change over time.
+
+#### Business resilience
+Foresight helps you perceive potential threats, recognize non-traditional competition and anticipate people’s changing behaviours and expectations. By determining strategies that work across a range of possible futures, you make your business more resilient.
+
+### Clarity and confidence
+A clear forward-looking perspective makes it easier to steer the ship. Foresight helps you determine your long-term strategic vision. When the direction is clearly articulated, it becomes obvious where you need to develop new capabilities, it’s easier to build consensus, and decision-makers perform with greater confidence.
+
+## What to know before kicking off your foresight initiative
+At its simplest, the foresight process breaks down to three basic activities:
+
+1. **Research**, where foresight is your radar for tracking and making sense of change
+2. **Imagination**, where you generate research-based speculations and provocations about what could occur over time
+3. **Implementation**, where you use what you’ve learned to inform your innovation pipeline and strategic plans
+
+There are a number of tools and methods you can configure in various ways throughout the process to produce desired outputs. Before kicking off your own foresight initiative, keep these key ideas in mind:
+
+* **Foresight begins with facts.** Although foresight involves imagining scenarios and speculating on possible outcomes, it all starts with your ability to notice and critically interpret information you read or perceive in the world.
+* **The future is plural.** Foresight is not a predictive science. It’s about anticipating and preparing for many possible futures.
+* **The future is in perpetual draft form.** Again, the future isn’t fixed. Your perspectives on the future should be revised and re-envisioned on a continuous basis.
+* **Foresight should challenge you.** As futurist Jim Dator says [(1995)](https://www.benlandau.com/wp-content/uploads/2015/06/Dator-What-FS-is.pdf), “any useful idea about the futures should appear to be ridiculous.” Foresight is a weapon against your own entrenched thinking and your biases toward expecting preferable or familiar outcomes. If the ideas you’re discussing don’t make you feel uncomfortable at times, you’re doing it wrong.
+* **Foresight creates shared materials for discussing change.** The methods we use in strategic foresight are designed to help teams and groups of decision-makers gain a shared understanding of how various forces and factors are shaping the future.
+
+export default ({ children }) => <BlogLayout meta={meta}>{children}</BlogLayout>
