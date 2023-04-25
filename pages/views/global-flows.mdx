@@ -1,0 +1,58 @@
+import BlogLayout from '@/layouts/BlogLayout'
+import Label from '@/components/Label'
+import AudioPlayer from '@/components/AudioPlayer'
+import EmbeddedVideo from '@/components/EmbeddedVideo'
+
+export const meta = {
+  title: `Global flows to come`,
+  description: `A set of scenarios on the future of global flows: people, data, commodities, capital.`,
+  image: `/images/global-flows.jpg`,
+  red: false,
+  intro: `A set of scenarios on the future of global flows: people, data, commodities, capital.`,
+  date: `Dec 2020`,
+  sidebar: false,
+  tags: [
+    "Scenarios",
+    "Sensemaking",
+    "Services",
+  ],
+  label: [
+    {
+      name: "GENESIS",
+      value: "Fractures, bifurcations, fissures"
+    },
+    {
+      name: "TECHNIQUE",
+      value: "Biblomania, diagnosis, possibilization"
+    },
+    {
+      name: "LEAD",
+      value: "V. Silins"
+    },
+  ]
+}
+
+
+# Futures of Global Flows
+
+The following scenarios were written at the end of 2020, when uncertainty about global supply chains was in the air. Much has happened since. To name only a few examples as of the start of 2023: the war in Ukraine, debt crises in developing countries, climate transition financing, hiked interest rates, the CHIPS act.
+
+While much has changed, the scenarios we wrote several years ago still resonate. They help reduce the complexity of change. They provide handles to grasp "what's happening" and "what's going on" – two of the most important questions for strategy.
+
+<Label meta={meta} />
+
+We developed these scenarios internally and quickly, to orient our research team around a few critical issues affecting the future of globalization in 2020. While scenario exercises are usually more useful for those creating them than for outsiders – as they help synthesize materials and concerns that are _particular_ to an organization or situation – we provide them here as an example of how we work, and the kinds of reference materials we draw on to build thick accounts of the future.
+
+Our staying abreast of critical academic work has proven to be valuable to many clients because it provides a richer, more coherent, more nuanced account of change than the usual assortment of news stories and odd musings, which can cause clients to question what the value of the exercise is. "Just a bunch of unsupported claims about the future" isn't far off from many organizational experiences of foresight and futures work. 
+
+Getting the ideas to _cohere_ is the hardest part. It's a question of _reduction_, of focus, not of throwing the kitchen sink at the problem. Drawing from a broad range of academic work, without highlighting that for the client (since it shouldn't be the focus), is what often gives us our edge. We build stories and frames that help clients grasp the critical factors affecting them by looking beyond the usual sources. It helps _simplify_.
+
+The following scenarios were developed internally, and so some of the language is more exploratory than what we would engage in client work. But the ideas are similar.
+
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQqa60nQAceYz53EreKIY71JS6Smh5tz6fHB-YLYJqBKtxLZ7dKpNIDeVjMqsuZjQRXMalXoqm-sJON/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+Scenarios have to be designed for particular organizational concerns and problems. Done well, they create the provocations necessary for surfacing tacit assumptions and interpretations. They provide a trigger for an organization's ongoing sensemaking. 
+
+Scenarios are a ruse to step beyond everday operational concerns and share hunches about the big picture. Their value isn't in the answers they provide – it's in the processes they trigger within an organization. 
+
+export default ({ children }) => <BlogLayout meta={meta}>{children}</BlogLayout>
