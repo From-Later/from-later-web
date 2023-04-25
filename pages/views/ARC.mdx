@@ -1,0 +1,54 @@
+import BlogLayout from '@/layouts/BlogLayout'
+import Label from '@/components/Label'
+import AudioPlayer from '@/components/AudioPlayer'
+import EmbeddedVideo from '@/components/EmbeddedVideo'
+
+export const meta = {
+  title: `ARC`,
+  description: `An iterative report documenting All Relevant Change`,
+  image: `/images/ARC.jpg`,
+  red: false,
+  intro: `An iterative report documenting All Relevant Change at the beginning of the COVID-19 pandemic.`,
+  date: `FEB-MARCH 2020`,
+  sidebar: false,
+  tags: [
+    "Techniques",
+    "Sensemaking",
+    "Services",
+  ],
+  label: [
+    {
+      name: "GENESIS",
+      value: "Panic, uncertainty, crisis"
+    },
+    {
+      name: "FILE UNDER",
+      value: "Sensemaking, draft positivity"
+    },
+    {
+      name: "VOLUME/EDITION",
+      value: "2.0"
+    },
+    { 
+      name: "RESEARCH",
+      value: "U. Vira, R. Bolton, M. Siu, V. Silins, S. Venis"
+    },
+  ]
+}
+
+
+# All Relevant Change
+
+All Relevant Change (ARC) was an effort to sensemake the most significant possible impacts of the COVID-19 pandemic in real-time during the early months of response. The report was widely shared, and has been used by teams at Carnegie Mellon University, Autodesk, Vice Media, Publicis Sapaient, RBC, IKEA, Shopify, The Government of Canada as well as a number of prominent independent futurists.
+
+<Label meta={meta} />
+
+ARC was organized around a number of simply titled ("normcore-y") themes that mixed together drivers of change, uncertainties, and weak signals. As the tongue-in-cheek name (all _relevant_ change) suggests, it was about _reducing_ the amount of information coming into individual and organizational situational awareness. It was about identifying _the differences that make a difference_ – not documenting every possible possibility. Bucketing possible changes into a relatively comprehensive and simple (but by no means exhaustive) framework was a way of providing peace of mind for perceptually- and cognitively-overwhelmed actors at the beginning of the pandemic, when, understandably, the speculation cycle was in overdrive and everyone accidentally became a futurist.
+
+Designed to be easy to share and print, it was widely circulated.
+
+Several years later, we're struck by a tone that was neither too alarmist nor acquiescent, and whose categories and explanations of the logic of change still hold value.
+
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQgk5_1H7C1vI9YskYlQLEXx7akIKgfjWXUCGBBdJUAnBK3CrAaphNYUKpiRiVRqTZmJPbH1iAAdGLc/pub?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569"></iframe>
+
+export default ({ children }) => <BlogLayout meta={meta}>{children}</BlogLayout>
